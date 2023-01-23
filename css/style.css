@@ -1,0 +1,14 @@
+#saucisse{
+    text-align: center;
+}
+#room{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.collapsible{
+    background-image: url(../img/slenderman.svg);
+    background-size: cover;
+}
+.ui-content {
+    padding-top: 0 !important;   
+}
