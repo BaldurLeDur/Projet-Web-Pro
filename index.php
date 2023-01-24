@@ -12,45 +12,54 @@
   <title>The Sensee - VR Room</title>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">The Sense</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li id="saucisse"><a href="news.html">News</a></li>
-                <li id="saucisse"><a href="exp.html">Nos expérience</a></li>
-                <li id="saucisse"><a href="ebout.html">A propos</a></li>
-                <li id="saucisse"><a href="stuff.html">Equipement</a></li>
-                <li id="saucisse"><a class="waves-effect waves-light modal-trigger" href="#modal1">Modal</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
+  <nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img class="nav-component" src="img/Logo.png" id="lgonav" alt="logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li id="saucisse"><a href="news.html"><div class="nav-component">News</div></a></li>
+            <li id="saucisse"><a href="exp.html"><div class="nav-component">Nos expérience</div></a></li>
+            <li id="saucisse"><a href="ebout.html"><div class="nav-component">A saucisse</div></a></li>
+            <li id="saucisse"><a href="stuff.html"><div class="nav-component">Equipement</div></a></li>
+            <li id="saucisse"><a class="waves-effect waves-light modal-trigger" href="#modal1"><div class="nav-component">Modal</div></a></li>
+        </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html"><div class="nav-component">Sass</div></a></li>
+    <li><a href="badges.html"><div class="nav-component">Components</div></a></li>
+    <li><a href="collapsible.html"><div class="nav-component">Javascript</div></a></li>
+    <li><a href="mobile.html"><div class="nav-component">Mobile</div></a></li>
+  </ul>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-              </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">connexion</a>
-        <div id="inscrip"><p>Pas inscrit ? <a href="inscription.html">Inscrivez-vous !</a></p></div>
-      </div>
-    </div>  
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    </div>
+    <div class="row" id="modal-foot">
+      <a href="#!" class="modal-close" ><div class="col s3" id="connect">connexion</div></a>
+      <div class="col s4"></div>
+      <div class="col s2" style="text-align: right;">Pas inscrit ?</div>
+      <a href="sign_in.php"><div class="col s3" id="sign">Inscrivez-vous !</div></a>
+    </div>
+  </div>  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 

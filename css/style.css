@@ -101,10 +101,50 @@ body {
 .unavailable {
     background-color: var(--unavailable);
 }
-
+body{
+    background-image: url(../img/Vector_78.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: #ffffff00 !important;
+    backdrop-filter: blur(3px);
+}
+.nav-component{
+    color: #000000;
+}
 #saucisse{
     text-align: center;
 }
 #inscrip{
     text-align: left;
+}
+#lgonav{
+    margin-left: 5px;
+    margin-top: 1px;
+    width: 6%;
+    fill: #000000 !important;
+}
+#connect{
+    color: #000000 !important;
+    text-align: center;
+}
+#connect:hover{
+    background-color: rgb(184, 184, 184);
+    height: 30px;
+}
+#sign{
+    text-align: left;
+}
+#sign:hover{
+    background-color: rgb(184, 184, 184);
+}
+#modal-foot .col .s2{
+    text-align: right;
+}
+#modal-foot .col{
+    height: 30px;
+}
+#modal-foot{
+    margin-bottom: 0px;
 }
