@@ -17,11 +17,15 @@
         <a href="#" class="brand-logo"><img class="nav-component" src="img/Logo.png" id="lgonav" alt="logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li id="saucisse"><a href="news.html"><div class="nav-component">News</div></a></li>
-            <li id="saucisse"><a href="exp.html"><div class="nav-component">Nos expérience</div></a></li>
-            <li id="saucisse"><a href="ebout.html"><div class="nav-component">A saucisse</div></a></li>
-            <li id="saucisse"><a href="stuff.html"><div class="nav-component">Equipement</div></a></li>
-            <li id="saucisse"><a class="waves-effect waves-light modal-trigger" href="#modal1"><div class="nav-component">Modal</div></a></li>
+            <li id="hover"><a href="news.html"><div class="nav-component">News</div></a></li>
+            <li class="nav-component">|</li>
+            <li id="hover"><a href="exp.html"><div class="nav-component">Nos expérience</div></a></li>
+            <li class="nav-component">|</li>
+            <li id="hover"><a href="ebout.html"><div class="nav-component">à propos</div></a></li>
+            <li class="nav-component">|</li>
+            <li id="hover"><a href="stuff.html"><div class="nav-component">Equipement</div></a></li>
+            <li class="nav-component">|</li>
+            <li id="hover"><a class="waves-effect waves-light modal-trigger" href="#modal1"><div class="nav-component">Modal</div></a></li>
         </ul>
     </div>
   </nav>

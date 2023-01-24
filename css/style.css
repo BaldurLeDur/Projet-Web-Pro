@@ -113,11 +113,8 @@ nav{
 .nav-component{
     color: #000000;
 }
-#saucisse{
-    text-align: center;
-}
-#inscrip{
-    text-align: left;
+#text:hover{
+    background-color: #00BA8D;
 }
 #lgonav{
     margin-left: 5px;
