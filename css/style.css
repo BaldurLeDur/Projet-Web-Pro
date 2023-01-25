@@ -113,13 +113,12 @@ nav{
 .nav-component{
     color: #000000;
 }
-#text:hover{
-    background-color: #00BA8D;
-}
 #lgonav{
     margin-left: 5px;
-    margin-top: 1px;
-    width: 6%;
+    margin-top: 6px;
+    width: 60px;
+    height: auto;
+    line-height: normal;
     fill: #000000 !important;
 }
 #connect{
@@ -144,4 +143,14 @@ nav{
 }
 #modal-foot{
     margin-bottom: 0px;
+}
+.main-logo{
+    text-align: center;
+}
+.logo-main{
+    margin-top: 20px;
+    width: 500px;
+}
+.btn{
+    margin-top: 20px;
 }

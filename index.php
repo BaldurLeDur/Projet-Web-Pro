@@ -15,26 +15,26 @@
   <nav>
     <div class="nav-wrapper">
         <a href="#" class="brand-logo"><img class="nav-component" src="img/Logo.png" id="lgonav" alt="logo"></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
+        <a href="#mobile-demo" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li id="hover"><a href="news.html"><div class="nav-component">News</div></a></li>
+            <li class="text waves-effect waves-light"><a href="news.html"><span class="nav-component">News</span></a></li>
             <li class="nav-component">|</li>
-            <li id="hover"><a href="exp.html"><div class="nav-component">Nos expérience</div></a></li>
+            <li class="text waves-effect waves-light"><a href="exp.html"><span class="nav-component">Nos expérience</span></a></li>
             <li class="nav-component">|</li>
-            <li id="hover"><a href="ebout.html"><div class="nav-component">à propos</div></a></li>
+            <li class="text waves-effect waves-light"><a href="ebout.html"><span class="nav-component">à propos</span></a></li>
             <li class="nav-component">|</li>
-            <li id="hover"><a href="stuff.html"><div class="nav-component">Equipement</div></a></li>
+            <li class="text waves-effect waves-light"><a href="stuff.html"><span class="nav-component">Equipement</span></a></li>
             <li class="nav-component">|</li>
-            <li id="hover"><a class="waves-effect waves-light modal-trigger" href="#modal1"><div class="nav-component">Modal</div></a></li>
+            <li class="text waves-effect waves-light"><a class="modal-trigger" href="#modal1"><span class="nav-component">Modal</span></a></li>
         </ul>
     </div>
   </nav>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html"><div class="nav-component">Sass</div></a></li>
-    <li><a href="badges.html"><div class="nav-component">Components</div></a></li>
-    <li><a href="collapsible.html"><div class="nav-component">Javascript</div></a></li>
-    <li><a href="mobile.html"><div class="nav-component">Mobile</div></a></li>
-  </ul>
+    <li class="text waves-effect waves-light"><a href="news.html"><span class="nav-component">News</span></a></li><br>
+    <li class="text waves-effect waves-light"><a href="exp.html"><span class="nav-component">Nos expérience</span></a></li><br>
+    <li class="text waves-effect waves-light"><a href="ebout.html"><span class="nav-component">à propos</span></a></li><br>
+    <li class="text waves-effect waves-light"><a class="modal-trigger" href="#modal1"><span class="nav-component">Modal</span></a></li>
+  </ul> 
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -60,7 +60,9 @@
       <div class="col s2" style="text-align: right;">Pas inscrit ?</div>
       <a href="sign_in.php"><div class="col s3" id="sign">Inscrivez-vous !</div></a>
     </div>
-  </div>  
+  </div>
+  <div class="center"><img class="logo-main" src="img/Logo.png" alt="">
+  <div class="btn center">dévouvrir</div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
