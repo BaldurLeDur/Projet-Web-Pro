@@ -31,6 +31,7 @@ font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
 
 body {
     color: var(--text_color);
+    font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
 }
 
@@ -200,4 +201,90 @@ nav{
   border-radius: 50%;
   backdrop-filter: blur(50%);
   border: solid 22px rgba(0 0 0 / 20%);
+}
+
+
+/*.footer {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--text_bottom_button_color);
+    color: var(--text_bottom_color);
+}
+
+.footer-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 600px;
+}
+
+.footer-text.separator {
+    width: 10px;
+    height: auto;
+    background-color: var(--text_bottom_color);
+}
+
+.footer-left {
+    display: flex;
+    gap: 20px;
+}*/
+
+.page-footer {
+    padding-top: 40px;
+    height: 150px;
+    background-color: var(--text_bottom_button_color);
+    color: var(--text_bottom_color);
+}
+
+.page-footer .container {
+    width: 100% !important;
+    max-width: initial !important;
+}
+
+.page-footer #footer-separator {
+    display: inline-flex;
+    width: 2px;
+    height: 24px;
+    background-color: var(--text_bottom_color);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.page-footer .footer-left {
+    margin-left: 1.5% !important;
+}
+
+.page-footer .footer-left p {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.page-footer .footer-left a {
+    color: var(--text_bottom_color);
+}
+
+.page-footer .footer-right {
+    display: flex;
+    width: 30%;
+}
+
+.page-footer .footer-right p {
+    display: flex;
+}
+
+.page-footer .footer-right .icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 36px;
+    font-size: 150%;
+}
+
+.page-footer .footer-right .icons .icon {
+    background-color: var(--text_bottom_color);
+    color: var(--text_bottom_button_color);
+    padding: 5px;
+    border-radius: 50%;
 }
