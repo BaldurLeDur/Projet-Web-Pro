@@ -1,0 +1,214 @@
+• Navbar
+	• News (redirect)
+	• Nos expériences (redirect)
+	• À propos (redirect)
+	• Équipements (redirect)
+
+• About
+	• circle
+	• video Button
+	• title (texte + image(sometimes))
+	• paragraph
+	• liens
+
+• Expérience
+	bg image
+	logo PEGI 18 (pour la Dark Room)
+	compteur like
+	durée
+	nb joueurs
+	titre
+	titre image
+	paragraphe
+	bouton "RÉSERVER"
+	bouton "Découvrir ... Room" (sur HomePage)
+
+• Smol expérience
+	bg image
+	titre image de la room
+	titre
+
+• Réservation
+	• les 4 rooms (row)
+	• Calendrier (col)
+
+• Article (demi ou full width)
+	image
+	titre
+	texte
+
+• FAQ
+	Cards déroulable (titre visible, texte togglable)
+
+• Pre-footer (All rooms)
+	• "Carrousel de la confusion" (flèche, indicateur, auto)
+		bg image
+		témoignage
+
+• Footer
+	3 boutons redirect (contact, réservation, FAQ)
+	droit d'auteur
+	mentions légales que personne ne lit
+	4 boutons redirect (yt, insta, twitter, fb)
+
+• Header
+	Navbar
+	3 liens de room (pas sur Homepage)
+	image de la page actuelle
+	About
+
+• Smol header
+	bg image
+	titre page (peut être pas tjr, à voir sur Figma)
+	About
+
+• Confirm
+	bouton pour sauvegarder en PDF <-- /!\ ON SE CALME /!\ Uniquement si TOUT le reste est fini
+	bg image du jeu
+	titre
+	titre en rouge
+	séparateur
+	titre image de la room
+	date
+	heure
+	nom du réservant
+	nb de joueurs
+	prix total
+	annonce de mail envoyé
+	bouton pour renvoyer le mail
+	en cas d'annulation : tél + mail
+	remerciement
+	logo "The SENSE"
+
+• Profils (hard codé)
+	photo / Image B&W
+	nom prénom
+	rôle / status dans l'ent
+	courte citation
+
+• Custom rooms
+	bcp trop complexe à expliquer, référez-vous à Figma
+
+>---===========]~{○}~[============---<
+
+♦ HomePage
+	Header
+	texte intro
+	4 Expérience les + likées
+	Réservation
+	2 Articles (demi width)
+	carrousel
+	FAQ
+	Footer
+
+♦ Creative Room
+	Header
+	intro
+	3 Custom rooms
+	intro hasard
+	bouton aléatoire
+	Pre-footer
+	Footer
+
+♦ Room (Light, Dark, Battle)
+	Header
+	2 Expériences (lié à la room)
+	Pre-footer (lié à la room)
+	Footer
+
+♦ Réservation (Light, Dark, Battle, Creative????)
+	Header
+	Smol expérience
+	Footer
+
+♦ Confimation réservation
+	Header
+	Confirm
+	Footer
+
+♦ À Propos
+	Smol header
+	intro
+	4 Profils
+	section où nous trouver
+	embed de Google Map <-- /!\ ON SE CALME /!\ Uniquement si TOUT le reste est fini
+	horaires d'ouvertures
+	form de contact
+	solution par téléphone
+	Footer
+
+♦ Équipements
+	Smol header
+	intro
+	Paragraphe Imagé gauche
+	Paragraphe Imagé droit
+	Paragraphe Imagé gauche
+	section satisfaction
+	"Carrousel de la confusion"
+	Footer
+
+♦ News
+	Navbar
+	bg image
+	Article (full width)
+	2 Articles (demi width)
+	Article (full width)
+	"Carrousel de la confusion"
+	Footer
+
+
+♦ Compte - connexion
+	Navbar
+	bg image
+	titre
+	affichage email + bouton "Modifier"
+	affichage mdp (crypté ou semi-crypté) + bouton "Modifier"
+	affichage réservation en cours
+	affichage état point de fidélité
+	toggle abonnement à la Newsletter
+	bouton de supression du compte
+	Footer
+
+♦ Compte - connexion
+	Navbar
+	bg image
+	titre
+	sous-titre
+	input "Nom Prénom"
+	input "Adresse Mail"
+	input "Mot de Passe"
+	input "Confirmation mdp"
+	bouton de validation
+	toggle abonnement à la Newsletter
+	Footer
+
+♦ Panel admin
+	• Section pour gérer les articles
+		- Ajout d'iamge pour l'article
+		- Ajout de titre et du paragraphe
+		- Paramètrage de la taille (demi ou full width)
+	• Section pour gérer les expériences
+		- Ajout d'image pour l'expérience
+		- Ajout de titre et de descriptif
+		- Paramètrage de la durée et du nombre de joueurs
+		- Association avec une des rooms
+
+♦ Module d'avis
+	- Accessible que quand connécté
+	- Sert à fournir le "Carrousel de la confusion"
+
+
+
+
+
+
+
+Liste de questions :
+
+	Où redirige "Nos expériences" ?
+	Qu'est-ce que la page "B to B" ?
+	Comment marche le calendrier sur la page d'acceuil ?
+	Toutes les miniatures doivent mener à une vidéo ?
+	Toutes les vidéos mènent au trailer ?
+	Le carrousel tout en bas, il est là pour parcourir tout le site ou pour afficher des témoignages positifs ?
+	Quels sont les autres maps / modes / difficultés ?

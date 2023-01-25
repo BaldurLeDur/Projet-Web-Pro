@@ -14,7 +14,7 @@
 <body>
   <nav>
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img class="nav-component" src="img/Logo.png" id="lgonav" alt="logo"></a>
+        <a href="#" class="brand-logo"><img class="nav-component" src="asset/Logo.png" id="lgonav" alt="logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li id="hover"><a href="news.html"><div class="nav-component">News</div></a></li>
@@ -60,7 +60,15 @@
       <div class="col s2" style="text-align: right;">Pas inscrit ?</div>
       <a href="sign_in.php"><div class="col s3" id="sign">Inscrivez-vous !</div></a>
     </div>
-  </div>  
+  </div>
+
+  <h1>Test du composant About</h1>
+  <?php require_once('components/about.php') ?>
+
+  <h1>Test du composant Article</h1>
+  <?php require_once('components/article/php') ?>
+
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
