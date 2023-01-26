@@ -7,6 +7,8 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_article.css">
+  <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link href="css/fontawesome/brands.min.css" rel="stylesheet">
   <link href="css/fontawesome/solid.min.css" rel="stylesheet">
@@ -69,6 +71,13 @@
   <div class="btn center black" id="discover">dévouvrir</div>
   <?php require_once('components/article.php') ?>
   <?php require_once('components/about.php') ?>
+
+  <div class ="article_container">
+    <?php
+    require 'components/article.php';
+    ?>
+  </div>
+  <?php require 'components/faq.php'; ?>
 
   <?php require_once("components/footer.php") ?>
 
