@@ -31,6 +31,7 @@ font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
 
 body {
     color: var(--text_color);
+    font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
 }
 
@@ -143,4 +144,54 @@ nav{
 }
 #modal-foot{
     margin-bottom: 0px;
+}
+
+
+/* CSS du composant Article */
+
+
+.article{
+    text-align: center;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.article .texte{
+    background-color: #f2f2f2f2;
+    margin-left : 150px;
+    margin-right: 150px;
+    padding-top : 30px;
+}
+
+.article_container{
+    align-items:center;
+    text-align :center;
+}
+
+
+/* CSS du composant About */
+
+#about
+{
+  background-color: #eafffb;
+  height: 506px;
+}
+#about-content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 2% 0 5%;
+}
+#about-content img
+{
+  display: inline-block;
+  width: 389px;
+  height: 389px;
+  object-fit: cover;
+  border-radius: 50%;
+  backdrop-filter: blur(50%);
+  border: solid 22px rgba(0 0 0 / 20%);
 }
