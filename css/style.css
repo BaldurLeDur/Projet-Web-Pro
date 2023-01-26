@@ -29,15 +29,10 @@ font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
     --unavailable: #9C0000;
 }
 
-body {
+.body {
     color: var(--text_color);
     font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
-}
-.signpage{
-    background-image: url(../asset/account_font.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 p {
@@ -123,7 +118,7 @@ a {
 .unavailable {
     background-color: var(--unavailable);
 }
-body{
+.mainpage{
     background-image: url(../asset/Vector_78.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,6 +130,7 @@ nav{
     margin-right: 0px;
     font-family: 'Amiko', sans-serif;
     position: fixed;
+    z-index: 10px;
 }
 .nav-component{
     color: #000000;
@@ -311,6 +307,11 @@ nav{
   border: solid 22px rgba(0 0 0 / 20%);
 }
 
+/* CSS page sign_in.php */
+
+.section{
+    background-image: url(../asset/Logo_blanc.svg);
+}
 /* CSS du footer */
 a {
     color: inherit;
