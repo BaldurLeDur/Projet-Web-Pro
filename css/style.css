@@ -35,12 +35,25 @@ body {
     background-color: var(--bg_color);
 }
 
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 2vmax;
+    color: #646363;
+}
+
 .main-bg {
     background-color: var(--bg_color) !important;
 }
 
 .main-text {
     color: var(--text_color) !important;
+    font-size: 1.7vmax;
 }
 
 .main-undertext {
@@ -57,6 +70,9 @@ body {
 
 .title {
     color: var(--text_bottom_button_color) !important;
+    font-family: 'Amiko', sans-serif !important;
+    font-weight: Bold !important;
+    font-size: 2.3vmax !important;
 }
 
 .under-bg {
@@ -174,35 +190,74 @@ nav{
 
 /* CSS du composant About */
 
-#about
+.about
 {
   background-color: #eafffb;
-  height: 506px;
+  height: 30vmax;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-#about-content
+
+.about-content
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+  margin: 2.5% 0 2.5% 0;
+}
+
+.about-video
+{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 100%;
+}
+.about-video div
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.about-video img
+{
+  display: inline-block;
+  width: 24vmax;
+  height: 24vmax;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 1.2vmax  rgba(0 0 0 / 20%);
+}
+
+.about-title
 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 2% 0 5%;
 }
-#about-content div
+.about-title img
 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#about-content img
-{
-  display: inline-block;
-  width: 389px;
-  height: 389px;
-  object-fit: cover;
-  border-radius: 50%;
-  backdrop-filter: blur(50%);
-  border: solid 22px rgba(0 0 0 / 20%);
+  width: 10vmax;
+  margin: 0 1.4% 2% 1.4%;
 }
 
+.about-button
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about-button p
+{
+  margin: 0 10px 0 0;
+}
+.about-button i
+{
+  font-size: 3.7vmax;
+}
 
 /*.footer {
     display: flex;
