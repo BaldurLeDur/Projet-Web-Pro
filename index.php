@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Sensee - VR Room</title>
 </head>
-<body>
+<body class="mainpage">
   <nav>
     <div class="nav-wrapper">
         <a href="#mobile-demo" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
