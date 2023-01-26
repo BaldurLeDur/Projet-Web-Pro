@@ -34,6 +34,11 @@ body {
     font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
 }
+.signpage{
+    background-image: url(../asset/account_font.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .main-bg {
     background-color: var(--bg_color) !important;
@@ -108,12 +113,18 @@ body{
     background-repeat: no-repeat;
 }
 nav{
-    background-color: #ffffff00 !important;
+    background-color: #ffffff58 !important;
     backdrop-filter: blur(3px);
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Amiko', sans-serif;
+    position: fixed;
 }
 .nav-component{
     color: #000000;
+    text-transform: uppercase;
 }
+
 #lgonav{
     margin-left: 5px;
     margin-top: 6px;
@@ -122,19 +133,31 @@ nav{
     line-height: normal;
     fill: #000000 !important;
 }
+.bold-nav{
+    font-family: 'Amiko', sans-serif;
+    font-weight: 700;
+}
 #connect{
     color: #000000 !important;
-    text-align: center;
+    text-align: center ;
 }
 #connect:hover{
     background-color: rgb(184, 184, 184);
     height: 30px;
+    text-align: center;
+}
+.logo-main{
+    margin-top: 50px;
+    width: 30%;
+}
+#discover{
+    margin-top: 50px;
+}
+.article{
+    margin-top: 50px;
 }
 #sign{
     text-align: left;
-}
-#sign:hover{
-    background-color: rgb(184, 184, 184);
 }
 #modal-foot .col .s2{
     text-align: right;
@@ -148,26 +171,14 @@ nav{
 
 
 /* CSS du composant Article */
-
-
-.article{
-    text-align: center;
-    display:flex;
-    align-items:center;
-    flex-direction: column;
-    justify-content: center;
-
+.imgarticle{
+    line-height: 0 !important;
 }
-.article .texte{
-    background-color: #f2f2f2f2;
-    margin-left : 150px;
-    margin-right: 150px;
-    padding-top : 30px;
-}
-
-.article_container{
-    align-items:center;
-    text-align :center;
+.back-text-article{
+    background-color: #E6E6E6;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
