@@ -206,3 +206,127 @@ nav{
   backdrop-filter: blur(50%);
   border: solid 22px rgba(0 0 0 / 20%);
 }
+
+/* CSS du footer */
+
+.page-footer {
+    padding-top: 40px;
+    height: 150px;
+    background-color: var(--text_bottom_button_color);
+    color: var(--text_bottom_color);
+}
+
+.page-footer .container {
+    width: 100% !important;
+    max-width: initial !important;
+}
+
+.page-footer #footer-separator {
+    display: inline-flex;
+    width: 2px;
+    height: 24px;
+    background-color: var(--text_bottom_color);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.page-footer .footer-left {
+    margin-left: 1.5% !important;
+}
+
+.page-footer .footer-left p {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.page-footer .footer-left a {
+    color: var(--text_bottom_color);
+}
+
+.page-footer .footer-right {
+    display: flex;
+    width: 30%;
+}
+
+.page-footer .footer-right p {
+    display: flex;
+}
+
+.page-footer .footer-right .icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 36px;
+    font-size: 150%;
+}
+
+.page-footer .footer-right .icons .icon {
+    background-color: var(--text_bottom_color);
+    color: var(--text_bottom_button_color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+a {
+    color: inherit;
+}
+
+.page-footer .hide-on-large-only .icons-med {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 125%;
+}
+
+@media only screen and (max-width: 1375px) {
+    .page-footer .footer-right .icons {
+        gap: 10px;
+        margin-left: 26px;
+        font-size: 135%;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .page-footer .footer-right .icons {
+        gap: 5px;
+        margin-left: 20px;
+        font-size: 100%;
+    }
+
+    .page-footer .footer-right .icons .icon {
+        background-color: transparent;
+        color: var(--text_bottom_color);
+        padding: 5px;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .page-footer .footer-left p {
+        gap: 20px;
+    }
+
+    .page-footer .footer-left {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 773px) {
+    .page-footer{
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-footer {
+        height: 240px;
+    }
+
+    .page-footer .footer-right {
+        justify-content: center;
+    }
+
+    .page-footer .container .row {
+        text-align: center !important;
+    }
+}

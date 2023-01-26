@@ -70,6 +70,9 @@
   <?php require_once('components/article.php') ?>
   <?php require_once('components/about.php') ?>
 
+  <?php require("components/footer.php") ?>
+
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
