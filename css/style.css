@@ -195,3 +195,57 @@ nav{
   backdrop-filter: blur(50%);
   border: solid 22px rgba(0 0 0 / 20%);
 }
+
+/* CSS du composant expérience */ 
+
+.image_exp
+{
+    line-height: 0;
+}
+
+.text_exp
+{
+    color: #646363 !important; 
+    font-size: 21px !important;
+    font-family: Abel !important;
+    background-color: #E6E6E6;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.title1_exp
+{ 
+    color: #3B4040 !important; 
+    font-size: 30px !important;
+    font-family: Amiko !important;
+    font-weight:  bold !important; 
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+
+}
+.title2_exp
+{
+    color: #3B4040 !important; 
+    font-size: 30px !important;
+    font-family: Poppins !important;
+    font-weight:  100 !important; 
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+}
+
+.couche1{ 
+    z-index: 1;
+}
+
+.couche2{
+    z-index: 2;
+}
+
+.content_exp
+{
+    color: #646363;
+}

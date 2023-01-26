@@ -62,11 +62,16 @@
     </div>
   </div>
 
-  <?php require_once('components/article.php') ?>
+  <div class="center"><?php require_once('components/article.php') ?></div>
+  
+  <br/>
+
+  <div><?php require_once('components/experience.php') ?></div>
 
   <br/>
 
   <?php require_once('components/about.php') ?>
+
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
