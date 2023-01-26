@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amiko:wght@400;700&family=Poppins:wght@100;200&display=swap');
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Amiko', sans-serif; Regular 400/Bold 700
+font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
+*/
+
+:root {
+    --bg_color: #FFFFFF;
+    --text_color:  #646363;
+    --text_bottom_color: #82FFE1;
+    --bandeaux_color: #EAFFFB;
+    --button_color:  #000000;
+    --text_bottom_button_color: #3B4040;
+
+    --light_room:  #EAFEFF;
+
+    --dark_room_1: #131313;
+    --dark_room_2: #000000;
+    --dark_room_3: #430000;
+    --dark_room_4: #FF0000;
+
+    --battle_room:  #CDFFF3;
+
+    --creative_room_1: #F2F2F2;
+    --creative_room_2:  #771261;
+
+    --available: #00BA8D;
+    --unavailable: #9C0000;
+}
+
+.body {
+    color: var(--text_color);
+    font-family: 'Abel', sans-serif;
+    background-color: var(--bg_color);
+}
+
+.main-bg {
+    background-color: var(--bg_color) !important;
+}
+
+.main-text {
+    color: var(--text_color) !important;
+}
+
+.main-undertext {
+    color: var(--text_bottom_color) !important;
+}
+
+.separator-color {
+    background-color: var(--bandeaux_color) !important;
+}
+
+.button-color {
+    color: var(--button_color) !important;
+}
+
+.title {
+    color: var(--text_bottom_button_color) !important;
+}
+
+.under-bg {
+    background-color: var(--text_bottom_button_color) !important;
+}
+
+.dark-room-bg {
+    background-color: var(--dark_room_1) !important;
+}
+
+.dark-room-text {
+    color: var(--bg_color) !important;
+}
+
+.dark-room-separator {
+    background-color: var(--dark_room_2) !important;
+}
+
+.dark-room-under-separator {
+    background-color: var(--dark_room_3) !important;
+}
+
+.dark-room-undertext {
+    background-color: var(--dark_room_4) !important;
+}
+
+.battle-room-separator {
+    background-color: var(--battle_room) !important;
+}
+
+.creator-room-separator {
+    background-color: var(--creative_room_1) !important;
+}
+
+.creator-room-under-separator {
+    background-color: var(--creative_room_2) !important;
+}
+
+.available {
+    background-color: var(--available);
+}
+
+.unavailable {
+    background-color: var(--unavailable);
+}
+.mainpage{
+    background-image: url(../asset/Vector_78.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: #ffffff58 !important;
+    backdrop-filter: blur(3px);
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Amiko', sans-serif;
+    position: fixed;
+    z-index: 10px;
+}
+.nav-component{
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#lgonav{
+    margin-left: 5px;
+    margin-top: 6px;
+    width: 60px;
+    height: auto;
+    line-height: normal;
+    fill: #000000 !important;
+}
+.bold-nav{
+    font-family: 'Amiko', sans-serif;
+    font-weight: 700;
+}
+#connect{
+    color: #000000 !important;
+    text-align: center ;
+}
+#connect:hover{
+    background-color: rgb(184, 184, 184);
+    height: 30px;
+    text-align: center;
+}
+.logo-main{
+    margin-top: 50px;
+    width: 30%;
+}
+#discover{
+    margin-top: 50px;
+}
+.article{
+    margin-top: 50px;
+}
+#sign{
+    text-align: left;
+}
+#modal-foot .col .s2{
+    text-align: right;
+}
+#modal-foot .col{
+    height: 30px;
+}
+#modal-foot{
+    margin-bottom: 0px;
+}
+
+
+/* CSS du composant Article */
+.imgarticle{
+    line-height: 0 !important;
+}
+.back-text-article{
+    background-color: #E6E6E6;
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* CSS du composant About */
+
+#about
+{
+  background-color: #eafffb;
+  height: 506px;
+}
+#about-content
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 2% 0 5%;
+}
+#about-content img
+{
+  display: inline-block;
+  width: 389px;
+  height: 389px;
+  object-fit: cover;
+  border-radius: 50%;
+  backdrop-filter: blur(50%);
+  border: solid 22px rgba(0 0 0 / 20%);
+}
+
+/* CSS du footer */
+
+.page-footer {
+    padding-top: 40px;
+    height: 150px;
+    background-color: var(--text_bottom_button_color);
+    color: var(--text_bottom_color);
+}
+
+.page-footer .container {
+    width: 100% !important;
+    max-width: initial !important;
+}
+
+.page-footer #footer-separator {
+    display: inline-flex;
+    width: 2px;
+    height: 24px;
+    background-color: var(--text_bottom_color);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.page-footer .footer-left {
+    margin-left: 1.5% !important;
+}
+
+.page-footer .footer-left p {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.page-footer .footer-left a {
+    color: var(--text_bottom_color);
+}
+
+.page-footer .footer-right {
+    display: flex;
+    width: 30%;
+}
+
+.page-footer .footer-right p {
+    display: flex;
+}
+
+.page-footer .footer-right .icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 36px;
+    font-size: 150%;
+}
+
+.page-footer .footer-right .icons .icon {
+    background-color: var(--text_bottom_color);
+    color: var(--text_bottom_button_color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+a {
+    color: inherit;
+}
+
+.page-footer .hide-on-large-only .icons-med {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 125%;
+}
+
+@media only screen and (max-width: 1375px) {
+    .page-footer .footer-right .icons {
+        gap: 10px;
+        margin-left: 26px;
+        font-size: 135%;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .page-footer .footer-right .icons {
+        gap: 5px;
+        margin-left: 20px;
+        font-size: 100%;
+    }
+
+    .page-footer .footer-right .icons .icon {
+        background-color: transparent;
+        color: var(--text_bottom_color);
+        padding: 5px;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .page-footer .footer-left p {
+        gap: 20px;
+    }
+
+    .page-footer .footer-left {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 773px) {
+    .page-footer{
+        height: 160px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-footer {
+        height: 240px;
+    }
+
+    .page-footer .footer-right {
+        justify-content: center;
+    }
+
+    .page-footer .container .row {
+        text-align: center !important;
+    }
+}
