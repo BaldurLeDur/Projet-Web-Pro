@@ -39,7 +39,7 @@ p {
     margin: 0;
 }
 
-a {
+.about a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
@@ -242,7 +242,7 @@ nav{
 {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
   align-items: center;
 }
 .about-title img
@@ -266,36 +266,10 @@ nav{
   font-size: 3.7vmax;
 }
 
-/*.footer {
-    display: flex;
-    height: 150px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--text_bottom_button_color);
-    color: var(--text_bottom_color);
-}
-
-.footer-text {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 600px;
-}
-
-.footer-text.separator {
-    width: 10px;
-    height: auto;
-    background-color: var(--text_bottom_color);
-}
-
-.footer-left {
-    display: flex;
-    gap: 20px;
-}*/
-=======
+/*=======
   justify-content: center;
   margin: 0 2% 0 5%;
-}
+}*/
 #about-content img
 {
   display: inline-block;
@@ -312,7 +286,67 @@ nav{
 .section{
     background-image: url(../asset/Logo_blanc.svg);
 }
+
 /* CSS du footer */
+
+.page-footer {
+    padding-top: 40px;
+    height: 150px;
+    background-color: var(--text_bottom_button_color);
+    color: var(--text_bottom_color);
+}
+
+.page-footer .container {
+    width: 100% !important;
+    max-width: initial !important;
+}
+
+.page-footer #footer-separator {
+    display: inline-flex;
+    width: 2px;
+    height: 24px;
+    background-color: var(--text_bottom_color);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.page-footer .footer-left {
+    margin-left: 1.5% !important;
+}
+
+.page-footer .footer-left p {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.page-footer .footer-left a {
+    color: var(--text_bottom_color);
+}
+
+.page-footer .footer-right {
+    display: flex;
+    width: 30%;
+}
+
+.page-footer .footer-right p {
+    display: flex;
+}
+
+.page-footer .footer-right .icons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 36px;
+    font-size: 150%;
+}
+
+.page-footer .footer-right .icons .icon {
+    background-color: var(--text_bottom_color);
+    color: var(--text_bottom_button_color);
+    padding: 5px;
+    border-radius: 50%;
+}
+
 a {
     color: inherit;
 }
