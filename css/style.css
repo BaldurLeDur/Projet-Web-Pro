@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Amiko:wght@400;700&family=Poppins:wght@100;200&display=swap');
-/* 
+/*
 font-family: 'Abel', sans-serif;
 font-family: 'Amiko', sans-serif; Regular 400/Bold 700
 font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
@@ -102,7 +102,7 @@ body {
     background-color: var(--unavailable);
 }
 body{
-    background-image: url(../img/Vector_78.svg);
+    background-image: url(../asset/Vector_78.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -143,14 +143,4 @@ nav{
 }
 #modal-foot{
     margin-bottom: 0px;
-}
-.main-logo{
-    text-align: center;
-}
-.logo-main{
-    margin-top: 20px;
-    width: 500px;
-}
-.btn{
-    margin-top: 20px;
 }
