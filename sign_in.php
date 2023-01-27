@@ -19,6 +19,11 @@
     <div class="parallax-container">
         <div class="parallax"><img src="asset/account_font.svg"></div>
     </div>
+    <div class="parallax-container">
+        <div class="parallax">
+          <img src="asset/account_font.svg">
+        </div>
+    </div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>

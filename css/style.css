@@ -167,8 +167,11 @@ nav{
 
 
 /* CSS du composant Article */
-.imgarticle{
+.imgarticlediv{
     line-height: 0 !important;
+}
+.imgarticle{
+    width: 100%;
 }
 .back-text-article{
     background-color: #E6E6E6;
