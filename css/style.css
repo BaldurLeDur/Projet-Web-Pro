@@ -297,6 +297,24 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 }
+#input{
+    margin-top: 50px;
+}
+#newletter{
+    margin-top: 15px;
+    color: #000000;
+}
+#sign-in-btn{
+    margin-top: 15px;
+    border-style: solid;
+    border-color: #3B4040;
+}
+#sign-in-btn:hover{
+    border-style: solid;
+    border-color: #3B4040;
+    background-color: #3B4040;
+    color: white;
+}
 /* CSS du footer */
 
 .page-footer {
@@ -427,6 +445,7 @@ a {
     position: relative;
     width: 100%;
     display: flex;
+    line-height: 0px;
 }
 
 .image_exp{

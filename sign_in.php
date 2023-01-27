@@ -20,7 +20,7 @@
         <div class="parallax"><img src="asset/account_font.svg"></div>
     </div>
     <div class="parallax-container" id="forms">
-      <div class="row">
+      <div class="row" id="input">
         <div class="col s2"></div>
         <div class="col s4">
           <input id="name" type="text" class="validate">
@@ -51,6 +51,17 @@
           <label for="confirm_password">Confirmation mot de passe</label>
         </div>
         <div class="col s2"></div>
+        <div class="col s12 center" id="newletter">
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" checked="unchecked" />
+              <span>Recevoir des News-letters</span>
+            </label>
+          </p>
+        </div>
+        <div class="col s5"></div>
+        <div class="col s2 center" id="sign-in-btn">S'inscrire</div>
+        <div class="col s5"></div>
       </div>
     </div>
     <?php require_once("components/footer.php") ?>
