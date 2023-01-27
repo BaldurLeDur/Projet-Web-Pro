@@ -413,3 +413,117 @@ a {
         text-align: center !important;
     }
 }
+
+.modal {
+    left: 63%;
+    transform-origin: right top;
+    max-height: 262px;
+    width: 524px;
+    transform-origin: right top;
+    border-radius: 10px;
+    border: black solid 2px;
+    overflow-y: initial;
+}
+
+.modal .modal-content .row-right {
+    margin-left: 100px;
+    margin-bottom: 0;
+}
+
+.modal .modal-content .row-right .row-bottom {
+    margin-bottom: -20px;
+}
+
+.modal .input-field input {
+    border-bottom: 0;
+    border: 1px solid var(--text_bottom_color);
+    border-radius: 15px;
+    height: 35px;
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal .input-field input:focus {
+    border-bottom: 1px solid var(--text_bottom_color) !important;
+    box-shadow: none !important;
+}
+
+.modal .modal-content {
+    padding-bottom: 0;
+}
+
+/* label color */
+.modal .input-field label {
+    color: var(--text_color);
+}
+/* label focus color */
+.modal .input-field input[type=text]:focus + label {
+    color: var(--text_bottom_color);
+}
+
+.modal .modal-email label, .modal .modal-password label {
+    top: -13%;
+    left: 1.8rem;
+}
+
+.modal .modal-email {
+    margin-bottom: 0px;
+    margin-top: 2rem;
+}
+
+.modal #modal-foot {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.modal #modal-foot #sign {
+    background-color: var(--button_color);
+    border-radius: 10px;
+    text-align: center;
+    width: 193px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.modal #modal-foot #sign a {
+    font-size: 28px;
+    font-family: "Amiko", sans-serif;
+    color: var(--bg_color);
+}
+
+/*
+
+background-color: transparent;
+border: 2px solid var(--text_bottom_color);
+border-bottom: 1px solid #9e9e9e;
+border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+outline: none;
+height: 35px;
+width: 340px;
+font-size: 15px;
+margin: 0 0 8px 0;
+padding: 0;
+-webkit-box-shadow: none;
+box-shadow: none;
+-webkit-box-sizing: content-box;
+box-sizing: content-box;
+-webkit-transition: border .3s, -webkit-box-shadow .3s;
+transition: border .3s, -webkit-box-shadow .3s;
+transition: box-shadow .3s, border .3s;
+transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+
+max-height: 262px;
+width: 524px;
+
+right: -63%;
+border-radius: 3%;
+border: 2px solid black;
+
+*/

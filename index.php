@@ -42,16 +42,16 @@
   </ul> 
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <div class="row">
+      <div class="row row-right">
         <form class="col s12">
-          <div class="row">
-            <div class="input-field col s12">
+          <div class="row row-bottom">
+            <div class="input-field col s12 modal-email">
               <input id="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col s12">
+          <div class="row row-bottom">
+            <div class="input-field col s12 modal-password">
               <input id="password" type="password" class="validate">
               <label for="password">Password</label>
             </div>
@@ -61,10 +61,13 @@
     </div>
     <div class="row" id="modal-foot">
       <div class="col s1"></div>
-      <a href="#!" class="modal-close" ><div class="col s2" id="connect">Connexion !</div></a>
-      <div class="left col s3"><a href="forgot_mdp.php">Mot de passe oublié ?</a></div>
-      <div class="col s3"><span class="right">Pas inscrit ?</span></div>
-      <div class="col s3" id="sign"><a href="sign_in.php">Inscrivez-vous !</a></div>
+      <a href="#!" class="modal-close"></a>
+      <div class="left col offset-s2 s3"><a href="forgot_mdp.php">Créer un compte</a></div>
+
+
+      <div class="col s3" id="sign" style="">
+        <a href="sign_in.php" style="">Connexion</a>
+      </div>
     </div>
   </div>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
