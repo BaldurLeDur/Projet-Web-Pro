@@ -7,6 +7,8 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_article.css">
+  <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link href="css/fontawesome/brands.min.css" rel="stylesheet">
   <link href="css/fontawesome/solid.min.css" rel="stylesheet">
@@ -70,7 +72,14 @@
   <?php require_once('components/article.php') ?>
   <?php require_once('components/about.php') ?>
 
-  <?php require("components/footer.php") ?>
+  <div class ="article_container">
+    <?php
+    require 'components/article.php';
+    ?>
+  </div>
+  <?php require 'components/faq.php'; ?>
+
+  <?php require_once("components/footer.php") ?>
 
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
