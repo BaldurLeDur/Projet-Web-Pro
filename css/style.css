@@ -159,7 +159,7 @@ nav{
     text-align: center;
 }
 .logo-main{
-    margin-top: 50px;
+    margin-top: 120px;
     width: 30%;
 }
 #discover{
@@ -167,6 +167,9 @@ nav{
 }
 .article{
     margin-top: 50px;
+}
+.couche1{
+    z-index: 50 !important;
 }
 #sign{
     text-align: left;
@@ -286,10 +289,32 @@ nav{
 
 /* CSS page sign_in.php */
 
-.section{
-    background-image: url(../asset/Logo_blanc.svg);
+.parallax-1{
+    z-index: -1;
 }
-
+#forms{
+    background-image: url(../asset/Logo_blanc.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#input{
+    margin-top: 50px;
+}
+#newletter{
+    margin-top: 15px;
+    color: #000000;
+}
+#sign-in-btn{
+    margin-top: 15px;
+    border-style: solid;
+    border-color: #3B4040;
+}
+#sign-in-btn:hover{
+    border-style: solid;
+    border-color: #3B4040;
+    background-color: #3B4040;
+    color: white;
+}
 /* CSS du footer */
 
 .page-footer {
@@ -412,4 +437,209 @@ a {
     .page-footer .container .row {
         text-align: center !important;
     }
+}
+
+/* CSS du component experience */
+
+.images_exp{
+    position: relative;
+    width: 100%;
+    display: flex;
+    line-height: 0px;
+}
+
+.image_exp{
+    width: 100%;
+}
+
+.picto1{
+    position: absolute;
+    bottom:50px;
+    right:30px;
+    width: 5%;
+}
+
+.picto2{
+    position: absolute;
+    bottom:50px;
+    right: 115px;
+    width: 5%;
+}
+
+.text_picto1{
+    text-align: center;
+    position: absolute;
+    bottom:10px;
+    right:20px;
+    color : white;
+    font-family:'Abel', sans-serif;
+    font-size: 20px;
+
+}
+
+.text_picto2{
+    text-align: center;
+    position: absolute;
+    bottom:10px;
+    right:125px;
+    color : white;
+    font-family:'Abel', sans-serif;
+    font-size: 20px;
+
+}
+
+.text_exp{
+    background-color: #E6E6E6;
+    padding: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title_exp{
+    font-size: 30px;
+}
+
+.title1_exp{
+    color: #3B4040;
+    font-family: 'Amiko', sans-serif;
+    font-weight: 750;
+    margin: 0;
+}
+
+.title2_exp{
+    color: #3B4040;
+    font-family:'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.content_exp{
+    color: #646363;
+    font-family:'Abel', sans-serif;
+    font-size: 21px;
+}
+
+
+.modal {
+    left: 65%;
+    transform-origin: right top;
+    max-height: 262px;
+    width: 524px;
+    transform-origin: right top;
+    border-radius: 10px;
+    border: black solid 2px;
+    overflow-y: initial;
+}
+
+.modal .modal-content .row-right {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.modal .modal-content .row-right .row-bottom {
+    margin-bottom: -20px;
+}
+
+.modal .input-field input {
+    border-bottom: 0;
+    border: 1px solid var(--text_bottom_color);
+    border-radius: 15px;
+    height: 35px;
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal .modal-password input {
+    padding-right: 40px;
+    width: 290px;
+}
+
+.modal .input-field input:focus {
+    border-bottom: 1px solid var(--text_bottom_color) !important;
+    box-shadow: none !important;
+}
+
+.modal .modal-content {
+    padding-top: 12px;
+    padding-bottom: 0;
+}
+
+.modal .modal-content .modal-padding-bottom {
+    padding-bottom: 12px;
+}
+
+/* label color */
+.modal .input-field label {
+    color: var(--text_color);
+}
+/* label focus color */
+.modal .input-field input[type=text]:focus + label {
+    color: var(--text_bottom_color);
+}
+
+.modal .modal-email label, .modal .modal-password label {
+    top: -13%;
+    left: 1.8rem;
+}
+
+.modal .modal-email {
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.modal #modal-foot {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.modal #modal-foot #sign {
+    background-color: var(--button_color);
+    border-radius: 10px;
+    text-align: center;
+    width: 193px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+.modal #modal-foot a #sign {
+    font-size: 28px;
+    font-family: "Amiko", sans-serif;
+    color: var(--bg_color);
+}
+
+.modal .modal-content p {
+    font-family: "Amiko", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text_color);
+}
+
+.modal .modal-content .modal-upper-text {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1rem;
+}
+
+.uppertext {
+    text-transform: uppercase;
+}
+
+.modal #modal-foot .width-diff {
+    width: 30%;
+}
+
+.modal .modal-password i {
+    position: absolute;
+    top: 7px;
+    left: 315px;
+    cursor: pointer;
+}
+
+.modal .modal-password p {
+    font-size: 10px;
+    width: 115px;
+    margin-left: 210px;
+    text-decoration: underline;
 }
