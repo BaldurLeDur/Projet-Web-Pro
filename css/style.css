@@ -518,16 +518,148 @@ a {
     font-size: 21px;
 }
 
+/* CSS Modal de connexion */
 
 .modal {
-    left: 65%;
+    left: calc(50vw + 22%); /* If someone know the formula to make the fixed thing responsive, please add it */
     transform-origin: right top;
     max-height: 262px;
     width: 524px;
-    transform-origin: right top;
     border-radius: 10px;
     border: black solid 2px;
     overflow-y: initial;
+}
+
+/*
+Is it horrible? Yes
+Does it work? Yes
+Does the client have to know about it? No
+Should someone find a way to fix that if they can? Yes
+*/
+@media only screen and (max-width: 1870px) {
+    .modal {
+        left: calc(50vw + 21%);
+    }
+}
+@media only screen and (max-width: 1820px) {
+    .modal {
+        left: calc(50vw + 20%);
+    }
+}
+@media only screen and (max-width: 1760px) {
+    .modal {
+        left: calc(50vw + 19%);
+    }
+}
+@media only screen and (max-width: 1710px) {
+    .modal {
+        left: calc(50vw + 18%);
+    }
+}
+@media only screen and (max-width: 1650px) {
+    .modal {
+        left: calc(50vw + 17%);
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .modal {
+        left: calc(50vw + 16%);
+    }
+}
+@media only screen and (max-width: 1550px) {
+    .modal {
+        left: calc(50vw + 15%);
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .modal {
+        left: calc(50vw + 14%);
+    }
+}
+@media only screen and (max-width: 1460px) {
+    .modal {
+        left: calc(50vw + 13%);
+    }
+}
+@media only screen and (max-width: 1420px) {
+    .modal {
+        left: calc(50vw + 12%);
+    }
+}
+@media only screen and (max-width: 1380px) {
+    .modal {
+        left: calc(50vw + 11%);
+    }
+}
+@media only screen and (max-width: 1350px) {
+    .modal {
+        left: calc(50vw + 10%);
+    }
+}
+@media only screen and (max-width: 1310px) {
+    .modal {
+        left: calc(50vw + 9%);
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .modal {
+        left: calc(50vw + 8%);
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .modal {
+        left: calc(50vw + 7%);
+    }
+}
+@media only screen and (max-width: 1220px) {
+    .modal {
+        left: calc(50vw + 6%);
+    }
+}
+@media only screen and (max-width: 1190px) {
+    .modal {
+        left: calc(50vw + 5%);
+    }
+}
+@media only screen and (max-width: 1170px) {
+    .modal {
+        left: calc(50vw + 4%);
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .modal {
+        left: calc(50vw + 3%);
+    }
+}
+@media only screen and (max-width: 1120px) {
+    .modal {
+        left: calc(50vw + 2%);
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .modal {
+        left: calc(50vw + 1%);
+    }
+}
+@media only screen and (max-width: 1070px) {
+    .modal {
+        left: calc(50vw + 0%);
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .modal {
+        left: calc(50vw - 1%);
+    }
+}
+@media only screen and (max-width: 1030px) {
+    .modal {
+        left: calc(50vw - 2%);
+    }
+}
+@media only screen and (max-width: 1010px) {
+    .modal {
+        left: calc(50vw - 3%);
+    }
 }
 
 .modal .modal-content .row-right {
