@@ -441,6 +441,10 @@ a {
 
 /* CSS du component experience */
 
+.row_img_exp{
+    margin-bottom: 0px;
+}
+
 .images_exp{
     position: relative;
     width: 100%;
@@ -454,37 +458,55 @@ a {
 
 .picto1{
     position: absolute;
-    bottom:50px;
-    right:30px;
+    bottom: 10%;
+    right: 5%;
     width: 5%;
 }
 
 .picto2{
     position: absolute;
-    bottom:50px;
-    right: 115px;
+    bottom: 10%;
+    right: 15%;
+    width: 5%;
+}
+
+.picto3{
+    position: absolute;
+    top: 5%;
+    right: 5%;
     width: 5%;
 }
 
 .text_picto1{
     text-align: center;
     position: absolute;
-    bottom:10px;
-    right:20px;
+    bottom: 6%;
+    right: 2%;
     color : white;
     font-family:'Abel', sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
 
 }
 
 .text_picto2{
     text-align: center;
     position: absolute;
-    bottom:10px;
-    right:125px;
+    bottom: 6%;
+    right: 15%;
     color : white;
     font-family:'Abel', sans-serif;
-    font-size: 20px;
+    font-size: 2vw;
+
+}
+
+.text_picto3{
+    text-align: center;
+    position: absolute;
+    top: 19%;
+    right: 5.5%;
+    color : white;
+    font-family:'Abel', sans-serif;
+    font-size: 2vw;
 
 }
 
@@ -518,6 +540,7 @@ a {
     font-size: 21px;
 }
 
+<<<<<<< Updated upstream
 /* CSS Modal de connexion */
 
 .modal {
@@ -774,4 +797,18 @@ Should someone find a way to fix that if they can? Yes
     width: 115px;
     margin-left: 210px;
     text-decoration: underline;
+=======
+.bouton_reserver_exp{
+    margin-top: 5% !important;
+    margin: auto;
+    display: block;
+}
+
+.link_exp{
+    color: #9D9D9D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: right;
+    font-size: 15px;
+>>>>>>> Stashed changes
 }
