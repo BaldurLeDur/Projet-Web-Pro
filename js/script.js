@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
-    $('.modal').modal();
+    $('.modal').modal({
+        'startingTop': "0%",
+        'endingTop': "1%",
+        'opacity': 0
+    });
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $('#confirm_password').keyup(function(){
@@ -30,4 +34,15 @@ function validate() {
         element.classList.add("valid");
         element.classList.remove("invalid");
         verified = true;
-    }}
+        return false; }}
+    
+
+
+function PasswordReverse() {
+    const password = $("#password");
+    if (password.attr("type") == "password") {
+        password.attr("type", "text")
+    } else {
+        password.attr("type", "password")
+    }
+}
