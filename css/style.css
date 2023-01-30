@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amiko:wght@400;700&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amiko:wght@400;700&family=Poppins:wght@100;200&family=Aldrich&display=swap');
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Amiko', sans-serif; Regular 400/Bold 700
@@ -29,22 +29,26 @@ font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
     --unavailable: #9C0000;
 }
 
-.body {
+body{
     color: var(--text_color);
     font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
 }
 
-p {
+p{
     margin: 0;
 }
 
-.about a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 2vmax;
-    color: #646363;
+a{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: ExtraLight;
+  color: inherit;
+}
+button{
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 .main-bg {
@@ -204,6 +208,11 @@ nav{
   flex-direction: row;
   justify-content: space-around;
 }
+.about a
+{
+    font-size: 2vmax;
+    color: #646363;
+}
 
 .about-content
 {
@@ -244,6 +253,7 @@ nav{
   flex-direction: row;
 /*<<<<<<< HEAD*/
   align-items: center;
+  text-transform: uppercase;
 }
 .about-title img
 {
@@ -260,26 +270,90 @@ nav{
 .about-button p
 {
   margin: 0 10px 0 0;
+  text-transform: uppercase;
 }
 .about-button i
 {
   font-size: 3.7vmax;
 }
 
+/* CSS du composant reservation-home */
+.reservation-home
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reservation-home-title p
+{
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8vmax;
+  font-weight: Thin;
+}
+
+.reservation-home-prices p:first-child
+{
+  font-size: 1.8vmax;
+}
+.reservation-home-prices p:nth-child(2)
+{
+  font-size: 1.2vmax;
+}
+
+.reservation-home-settings
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reservation-home-settings button
+{
+  margin: 0 10% 0 10%;
+}
+
+.reservation-player-amount
+{
+  font-family: 'Aldrich', sans-serif;
+  font-size: 2.7vmax;
+  font-weight: bold;
+}
+
+/* CSS du composant price */
+.price p
+{
+  font-size: 1.4vmax;
+  text-transform: uppercase;
+}
+.price img
+{
+  width: 14vmax;
+  margin-bottom: 1%;
+  display: inline-block;
+  object-fit: fill;
+}
+
+.price-img-container
+{
+  width: 15vmax;
+  height: 7vmax;
+}
+
+.price-smol-text
+{
+  font-size: 1vmax;
+}
+.price-red-text
+{
+  color: #430000;
+}
+
 /*=======
   justify-content: center;
   margin: 0 2% 0 5%;
 }*/
-#about-content img
-{
-  display: inline-block;
-  width: 389px;
-  height: 389px;
-  object-fit: cover;
-  border-radius: 50%;
-  backdrop-filter: blur(50%);
-  border: solid 22px rgba(0 0 0 / 20%);
-}
 
 /* CSS page sign_in.php */
 
@@ -345,10 +419,6 @@ nav{
     color: var(--text_bottom_button_color);
     padding: 5px;
     border-radius: 50%;
-}
-
-a {
-    color: inherit;
 }
 
 .page-footer .hide-on-large-only .icons-med {

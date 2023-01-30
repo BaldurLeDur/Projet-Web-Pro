@@ -39,7 +39,7 @@
     <li class=" waves-effect waves-light"><a href="exp.html"><span class="nav-component">Nos expérience</span></a></li><br>
     <li class=" waves-effect waves-light"><a href="ebout.html"><span class="nav-component">à propos</span></a></li><br>
     <li class=" waves-effect waves-light"><a class="modal-trigger" href="#modal1"><span class="nav-component">connexion</span></a></li>
-  </ul> 
+  </ul>
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="row">
@@ -80,6 +80,8 @@
   <?php require 'components/faq.php'; ?>
 
   <?php require_once("components/footer.php") ?>
+
+  <?php require_once('components/reservation-home.php') ?>
 
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
