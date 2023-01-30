@@ -9,5 +9,11 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
 });
 
-
-    
+function PasswordReverse() {
+    const password = $("#password");
+    if (password.attr("type") == "password") {
+        password.attr("type", "text")
+    } else {
+        password.attr("type", "password")
+    }
+}

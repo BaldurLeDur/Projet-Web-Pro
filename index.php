@@ -43,17 +43,26 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <div class="row row-right">
-        <form class="col s12">
+        <div class="col offset-s9 s1 modal-padding-bottom">
+          <p class="modal-upper-text">Connexion</p>
+        </div>
+        <form class="col s6">
           <div class="row row-bottom">
-            <div class="input-field col s12 modal-email">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
+            <div class="col s6">
+              <p>Identifiant</p>
+            </div>
+            <div class="input-field col s6 modal-email">
+              <input id="email" type="email">
             </div>
           </div>
           <div class="row row-bottom">
-            <div class="input-field col s12 modal-password">
-              <input id="password" type="password" class="validate">
-              <label for="password">Password</label>
+            <div class="col s6">
+              <p>Mot de passe</p>
+            </div>
+            <div class="input-field col s6 modal-password">
+              <input id="password" type="password">
+              <i onclick="PasswordReverse()" class="material-icons">remove_red_eye</i>
+              <a href="forgot_mdp.php"><p>Forgot your password?</p></a>
             </div>
           </div>
         </form>
@@ -61,13 +70,14 @@
     </div>
     <div class="row" id="modal-foot">
       <div class="col s1"></div>
-      <a href="#!" class="modal-close"></a>
-      <div class="left col offset-s2 s3"><a href="forgot_mdp.php">Créer un compte</a></div>
+      <div class="width-diff left col offset-s2 s3"><a href="sign_in.php">Créer un compte</a></div>
 
 
-      <div class="col s3" id="sign" style="">
-        <a href="sign_in.php" style="">Connexion</a>
-      </div>
+      <a href="log_in.php">
+        <div class="col s3" id="sign">
+          Connexion
+        </div>
+      </a>
     </div>
   </div>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>

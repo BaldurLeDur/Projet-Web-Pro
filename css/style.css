@@ -415,7 +415,7 @@ a {
 }
 
 .modal {
-    left: 63%;
+    left: 65%;
     transform-origin: right top;
     max-height: 262px;
     width: 524px;
@@ -426,7 +426,7 @@ a {
 }
 
 .modal .modal-content .row-right {
-    margin-left: 100px;
+    margin-left: 0;
     margin-bottom: 0;
 }
 
@@ -444,13 +444,23 @@ a {
     padding-right: 10px;
 }
 
+.modal .modal-password input {
+    padding-right: 40px;
+    width: 290px;
+}
+
 .modal .input-field input:focus {
     border-bottom: 1px solid var(--text_bottom_color) !important;
     box-shadow: none !important;
 }
 
 .modal .modal-content {
+    padding-top: 12px;
     padding-bottom: 0;
+}
+
+.modal .modal-content .modal-padding-bottom {
+    padding-bottom: 12px;
 }
 
 /* label color */
@@ -469,7 +479,7 @@ a {
 
 .modal .modal-email {
     margin-bottom: 0px;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .modal #modal-foot {
@@ -488,10 +498,45 @@ a {
     margin-left: 10px;
 }
 
-.modal #modal-foot #sign a {
+.modal #modal-foot a #sign {
     font-size: 28px;
     font-family: "Amiko", sans-serif;
     color: var(--bg_color);
+}
+
+.modal .modal-content p {
+    font-family: "Amiko", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text_color);
+}
+
+.modal .modal-content .modal-upper-text {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1rem;
+}
+
+.uppertext {
+    text-transform: uppercase;
+}
+
+.modal #modal-foot .width-diff {
+    width: 30%;
+}
+
+.modal .modal-password i {
+    position: absolute;
+    top: 7px;
+    left: 315px;
+    cursor: pointer;
+}
+
+.modal .modal-password p {
+    font-size: 10px;
+    width: 115px;
+    margin-left: 210px;
+    text-decoration: underline;
 }
 
 /*
