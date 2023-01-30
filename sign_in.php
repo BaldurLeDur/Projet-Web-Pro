@@ -43,8 +43,8 @@
       <div class="row">
         <div class="col s2"></div>
         <div class="col s4">
-          <input id="password" type="password" class="validate">
-          <label for="password">Mot de passe</label>
+          <input id="first_password" type="password">
+          <label for="first_password">Mot de passe</label>
         </div>
         <div class="col s4">
           <input id="confirm_password" type="password" class="validate">

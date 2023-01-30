@@ -130,7 +130,7 @@ nav{
     margin-right: 0px;
     font-family: 'Amiko', sans-serif;
     position: fixed;
-    z-index: 10px;
+    z-index: 10;
 }
 .nav-component{
     color: #000000;
