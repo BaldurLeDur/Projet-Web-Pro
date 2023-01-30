@@ -9,19 +9,25 @@ $(document).ready(function(){
     $('#confirm_password').click(function(){
         validate();
     });
+    $('#show_button_one').click(function() {
+        $(this).toggleClass('myclass');
+        $(this).toggleClass('showhidenew');
+    });
 });
 
 function validate() {
  
-    var a = document.getElementById("password").value;
+    var a = document.getElementById("first_password").value;
     var b = document.getElementById("confirm_password").value;
     var element = document.getElementById("confirm_password");
+    var size = b.length
+   
     const verified = false
-    if (a!=b) {
+    if (a!=b && size!=0) {
         element.classList.add("invalid");
-        return false; }
-    else {
+        element.classList.remove("valid");}
+    else if (size!=0) {
         element.classList.add("valid");
+        element.classList.remove("invalid");
         verified = true;
-        return false; }}
-    
+    }}
