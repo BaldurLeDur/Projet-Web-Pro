@@ -17,6 +17,14 @@
   <title>The Sensee - VR Room</title>
 </head>
 <body class="mainpage">
+  <?php
+  // Souvent on identifie cet objet par la variable $conn ou $db
+  $mysqlConnection = new PDO(
+      'mysql:host=localhost;dbname=the_sense;charset=utf8',
+      'root',
+      'root'
+  );
+  ?>
   <nav>
     <div class="nav-wrapper">
         <a href="#mobile-demo" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>

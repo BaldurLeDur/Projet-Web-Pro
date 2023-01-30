@@ -296,9 +296,12 @@ nav{
     background-image: url(../asset/Logo_blanc.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
+
 }
 #input{
     margin-top: 50px;
+    color: black !important;
 }
 #newletter{
     margin-top: 15px;

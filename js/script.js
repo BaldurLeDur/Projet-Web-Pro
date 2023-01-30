@@ -26,14 +26,14 @@ function validate() {
     var element = document.getElementById("confirm_password");
     var size = b.length
    
-    const verified = false
+    const mdpverified = false
     if (a!=b && size!=0) {
         element.classList.add("invalid");
         element.classList.remove("valid");}
     else if (size!=0) {
         element.classList.add("valid");
         element.classList.remove("invalid");
-        verified = true;
+        mdpverified = true;
         return false; }}
     
 
@@ -44,5 +44,13 @@ function PasswordReverse() {
         password.attr("type", "text")
     } else {
         password.attr("type", "password")
+    }
+}
+
+function confirm_singin() {
+    var email = document.getElementById("email");
+    var confirm = document.getElementById("forms");
+    if (email.classList.contains(validate) && mdpverified == true) {
+        confirm.classList.add("confirmed");
     }
 }
