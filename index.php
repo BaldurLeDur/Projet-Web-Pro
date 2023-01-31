@@ -18,15 +18,9 @@
 </head>
 <body class="mainpage">
   <?php
-  // Souvent on identifie cet objet par la variable $conn ou $db
-  $mysqlConnection = new PDO(
-      'mysql:host=localhost;dbname=the_sense;charset=utf8',
-      'root',
-      'root'
-  );
-  $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
+    require_once('components/config.php');
+    require_once('components/navbar.php')
   ?>
-  <?php require_once('components/navbar.php') ?>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
   <div class="btn center black" id="discover">dévouvrir</div>
   <div class="center"><?php require_once('components/article.php') ?></div>
@@ -49,6 +43,12 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <?php
+  if (isset($_SESSION['success'])) { ?>
+    <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
+  <?php
+    unset($_SESSION['success']);
+  } ?>
 </body>
 
 
