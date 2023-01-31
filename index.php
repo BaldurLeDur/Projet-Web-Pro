@@ -24,6 +24,7 @@
       'root',
       'root'
   );
+  $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
   ?>
   <?php require_once('components/navbar.php') ?>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
