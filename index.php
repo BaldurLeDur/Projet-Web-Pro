@@ -30,7 +30,7 @@
   <div><?php require_once('components/experience.php') ?></div>
   <?php require_once('components/about.php') ?>
 
-  <div class ="article_container">
+  <div class="article_container">
     <?php
     require 'components/article.php';
     ?>
@@ -44,11 +44,17 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <?php
+  echo $_SESSION["error"];
   if (isset($_SESSION['success'])) { ?>
     <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
   <?php
     unset($_SESSION['success']);
-  } ?>
+  }
+  if (isset($_SESSION['error'])) { echo "dance in the rain"; ?>
+    <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['error'] ?>"})</script>
+  <?php
+    unset($_SESSION['error']);
+  }?>
 </body>
 
 

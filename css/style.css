@@ -760,10 +760,12 @@ Should someone find a way to fix that if they can? Yes
     margin-left: 10px;
 }
 
-.modal #modal-foot a #sign {
+.modal #modal-foot input[type="submit"] {
+    color: var(--bg_color);
+    border: none;
     font-size: 28px;
     font-family: "Amiko", sans-serif;
-    color: var(--bg_color);
+    cursor: pointer;
 }
 
 .modal .modal-content p {

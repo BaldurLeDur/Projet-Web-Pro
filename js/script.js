@@ -17,6 +17,7 @@ $(document).ready(function(){
         $(this).toggleClass('myclass');
         $(this).toggleClass('showhidenew');
     });
+    $('.dropdown-trigger').dropdown();
 });
 
 function validate() {
