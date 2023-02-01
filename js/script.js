@@ -1,6 +1,10 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
-    $('.modal').modal();
+    $('.modal').modal({
+        'startingTop': "0%",
+        'endingTop': "1%",
+        'opacity': 0
+    });
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $('#confirm_password').keyup(function(){
@@ -9,19 +13,44 @@ $(document).ready(function(){
     $('#confirm_password').click(function(){
         validate();
     });
+    $('#show_button_one').click(function() {
+        $(this).toggleClass('myclass');
+        $(this).toggleClass('showhidenew');
+    });
 });
 
 function validate() {
  
-    var a = document.getElementById("password").value;
+    var a = document.getElementById("first_password").value;
     var b = document.getElementById("confirm_password").value;
     var element = document.getElementById("confirm_password");
-    const verified = false
-    if (a!=b) {
+    var size = b.length
+   
+    const mdpverified = false
+    if (a!=b && size!=0) {
         element.classList.add("invalid");
-        return false; }
-    else {
+        element.classList.remove("valid");}
+    else if (size!=0) {
         element.classList.add("valid");
-        verified = true;
+        element.classList.remove("invalid");
+        mdpverified = true;
         return false; }}
     
+
+
+function PasswordReverse() {
+    const password = $("#password");
+    if (password.attr("type") == "password") {
+        password.attr("type", "text")
+    } else {
+        password.attr("type", "password")
+    }
+}
+
+function confirm_singin() {
+    var email = document.getElementById("email");
+    var confirm = document.getElementById("forms");
+    if (email.classList.contains(validate) && mdpverified == true) {
+        confirm.classList.add("confirmed");
+    }
+}
