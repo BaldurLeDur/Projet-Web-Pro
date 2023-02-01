@@ -1,6 +1,6 @@
 <div class="container center"></div>
-    <div class="row">
-        <div class="col s12 imgarticle" ><img src="asset/article_noel.svg"></div>
+    <div class="row center">
+        <div class="col s12 imgarticlediv" ><img class="imgarticle" src="asset/article_noel.svg"></div>
         <div class="col s1"></div>
         <div class="back-text-article center col s10">
             <h2>ÉVÉNEMENT : LA LÉGENDE DU PÈRE NOËL</h2>

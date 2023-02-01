@@ -28,3 +28,31 @@
     ?>
   </div>
 </div>
+<div class="calendar-home">
+  <div class="calendar-home-selector">
+    <button type="button" name="prev-date"><i class="material-icons">keyboard_double_arrow_left</i></button>
+    <p>Du <span class="calendar-start-day">10</span> au <span class="calendar-end-day">20</span> <span class="clanedar-month">Décembre</span></p>
+    <button type="button" name="next-date"><i class="material-icons">keyboard_double_arrow_right</i></button>
+  </div>
+</div>
+<div class="calendar">
+  <?php require('components/day.php') ?>
+  <div class="vertical-separator"></div>
+  <?php require('components/day.php') ?>
+  <div class="vertical-separator"></div>
+  <?php require('components/day.php') ?>
+  <div class="vertical-separator"></div>
+  <?php require('components/day.php') ?>
+  <div class="vertical-separator"></div>
+  <?php require('components/day.php') ?>
+  <div class="vertical-separator"></div>
+  <?php require('components/day.php') ?>
+  <div class="vertical-separator"></div>
+  <?php require('components/day.php') ?>
+</div>
+<div class="calendar-legend">
+  <div></div>
+  <p>Non disponible</p>
+  <div></div>
+  <p>Réservé</p>
+</div>

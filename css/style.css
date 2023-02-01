@@ -163,7 +163,7 @@ nav{
     text-align: center;
 }
 .logo-main{
-    margin-top: 50px;
+    margin-top: 120px;
     width: 30%;
 }
 #discover{
@@ -171,6 +171,9 @@ nav{
 }
 .article{
     margin-top: 50px;
+}
+.couche1{
+    z-index: 50 !important;
 }
 #sign{
     text-align: left;
@@ -187,8 +190,11 @@ nav{
 
 
 /* CSS du composant Article */
-.imgarticle{
+.imgarticlediv{
     line-height: 0 !important;
+}
+.imgarticle{
+    width: 100%;
 }
 .back-text-article{
     background-color: #E6E6E6;
@@ -251,7 +257,6 @@ nav{
 {
   display: flex;
   flex-direction: row;
-/*<<<<<<< HEAD*/
   align-items: center;
   text-transform: uppercase;
 }
@@ -284,14 +289,26 @@ nav{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-image: url("../asset/calendrier-bg.svg");
+  color: white;
 }
 
+.reservation-home-title
+{
+  width: 100%;
+}
+.reservation-home-title img
+{
+  width: 70%;
+  height: auto;
+}
 .reservation-home-title p
 {
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.8vmax;
-  font-weight: Thin;
+  font-size: 3.3vmax;
+  font-weight: 1;
+  margin-bottom: 8%;
 }
 
 .reservation-home-prices p:first-child
@@ -308,10 +325,12 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 4%;
 }
 .reservation-home-settings button
 {
   margin: 0 10% 0 10%;
+  color: white;
 }
 
 .reservation-player-amount
@@ -321,24 +340,147 @@ nav{
   font-weight: bold;
 }
 
+.reservation-home-rooms
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 5% 0 5%;
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+.calendar-home
+{
+  background-color: black;
+  color: white;
+}
+
+.calendar-home-selector
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.calendar-home-selector button
+{
+  color: white;
+  margin: 2%;
+}
+.calendar-home-selector i
+{
+  font-size: 2.3vmax;
+}
+.calendar-home-selector p
+{
+  font-size: 2vmax;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.calendar
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  text-align: center;
+  padding: 0 7% 0 7%;
+}
+
+.vertical-separator
+{
+  width: 1px;
+  margin: 1% 0 1% 0;
+  border: solid #DFDFDF 1px;
+}
+
+.calendar-legend
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+.calendar-legend p
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vmax;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 4%;
+}
+.calendar-legend div
+{
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 1%;
+}
+.calendar-legend div:first-child
+{
+  background-color: #9C0000;
+}
+.calendar-legend div:nth-child(3)
+{
+  background-color: #00BA8D;
+}
+
+/* CSS du composant day */
+.day
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.day-title
+{
+  color: #B10000;
+  font-family: 'Amiko', sans-serif;
+  font-weight: bold;
+  font-size: 1.4vmax;
+  margin-bottom: 14%;
+}
+
+.timestamps
+{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6vmax;
+}
+
+.timestamps p
+{
+  margin: 4% 0 4% 0;
+}
+
 /* CSS du composant price */
+.price
+{
+  width: 17%;
+}
+
 .price p
 {
-  font-size: 1.4vmax;
+  font-size: 1vmax;
   text-transform: uppercase;
 }
 .price img
 {
-  width: 14vmax;
-  margin-bottom: 1%;
-  display: inline-block;
+  width: 70%;
+  height: 70%;
+  object-position: 0 0;
   object-fit: fill;
 }
 
 .price-img-container
 {
-  width: 15vmax;
-  height: 7vmax;
+  width: 100%;
+  height: 6vmax;
 }
 
 .price-smol-text
@@ -347,20 +489,37 @@ nav{
 }
 .price-red-text
 {
-  color: #430000;
+  color: #930000;
 }
-
-/*=======
-  justify-content: center;
-  margin: 0 2% 0 5%;
-}*/
 
 /* CSS page sign_in.php */
 
-.section{
-    background-image: url(../asset/Logo_blanc.svg);
+.parallax-1{
+    z-index: -1;
 }
-
+#forms{
+    background-image: url(../asset/Logo_blanc.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#input{
+    margin-top: 50px;
+}
+#newletter{
+    margin-top: 15px;
+    color: #000000;
+}
+#sign-in-btn{
+    margin-top: 15px;
+    border-style: solid;
+    border-color: #3B4040;
+}
+#sign-in-btn:hover{
+    border-style: solid;
+    border-color: #3B4040;
+    background-color: #3B4040;
+    color: white;
+}
 /* CSS du footer */
 
 .page-footer {

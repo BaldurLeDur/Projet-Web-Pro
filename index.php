@@ -69,7 +69,11 @@
   </div>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
   <div class="btn center black" id="discover">dévouvrir</div>
-  <?php require_once('components/article.php') ?>
+  <div class="center"><?php require_once('components/article.php') ?></div>
+  
+  <br/>
+
+  <div><?php require_once('components/experience.php') ?></div>
   <?php require_once('components/about.php') ?>
 
   <div class ="article_container">

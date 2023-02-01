@@ -4,16 +4,16 @@
       switch ($pricesToDisplay)
       {
         case 1:
-          echo '<img src="asset/light_room_black.svg " alt="Light Room">';
+          echo '<img src="asset/light_room_white.svg " alt="Light Room">';
           break;
         case 2:
-          echo '<img src="asset/dark_room_black.svg" alt="Dark Room">';
+          echo '<img src="asset/dark_room_white.svg" alt="Dark Room">';
           break;
         case 3:
-          echo '<img src="asset/battle_room_black.svg" alt="Battle Room">';
+          echo '<img src="asset/battle_room_white.svg" alt="Battle Room">';
           break;
         case 4:
-          echo '<img src="asset/creative_room_black.svg" alt="Creative Room">';
+          echo '<img src="asset/creative_room_white.svg" alt="Creative Room">';
           break;
       }
     ?>
