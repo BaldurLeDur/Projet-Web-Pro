@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amiko:wght@400;700&family=Poppins:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amiko:wght@400;700&family=Poppins:wght@100;200&family=Aldrich&display=swap');
 /*
 font-family: 'Abel', sans-serif;
 font-family: 'Amiko', sans-serif; Regular 400/Bold 700
@@ -29,22 +29,26 @@ font-family: 'Poppins', sans-serif; ExtraLight 200 - Thin 100
     --unavailable: #9C0000;
 }
 
-.body {
+body{
     color: var(--text_color);
     font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
 }
 
-p {
+p{
     margin: 0;
 }
 
-.about a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 2vmax;
-    color: #646363;
+a{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: ExtraLight;
+  color: inherit;
+}
+button{
+  border: none;
+  background: none;
+  padding: 0;
 }
 
 .main-bg {
@@ -210,6 +214,11 @@ nav{
   flex-direction: row;
   justify-content: space-around;
 }
+.about a
+{
+    font-size: 2vmax;
+    color: #646363;
+}
 
 .about-content
 {
@@ -248,8 +257,8 @@ nav{
 {
   display: flex;
   flex-direction: row;
-/*<<<<<<< HEAD*/
   align-items: center;
+  text-transform: uppercase;
 }
 .about-title img
 {
@@ -266,25 +275,221 @@ nav{
 .about-button p
 {
   margin: 0 10px 0 0;
+  text-transform: uppercase;
 }
 .about-button i
 {
   font-size: 3.7vmax;
 }
 
-/*=======
-  justify-content: center;
-  margin: 0 2% 0 5%;
-}*/
-#about-content img
+/* CSS du composant reservation-home */
+.reservation-home
 {
-  display: inline-block;
-  width: 389px;
-  height: 389px;
-  object-fit: cover;
-  border-radius: 50%;
-  backdrop-filter: blur(50%);
-  border: solid 22px rgba(0 0 0 / 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("../asset/calendrier-bg.svg");
+  color: white;
+}
+
+.reservation-home-title
+{
+  width: 100%;
+}
+.reservation-home-title img
+{
+  width: 70%;
+  height: auto;
+}
+.reservation-home-title p
+{
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.3vmax;
+  font-weight: 1;
+  margin-bottom: 8%;
+}
+
+.reservation-home-prices p:first-child
+{
+  font-size: 1.8vmax;
+}
+.reservation-home-prices p:nth-child(2)
+{
+  font-size: 1.2vmax;
+}
+
+.reservation-home-settings
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+.reservation-home-settings button
+{
+  margin: 0 10% 0 10%;
+  color: white;
+}
+
+.reservation-player-amount
+{
+  font-family: 'Aldrich', sans-serif;
+  font-size: 2.7vmax;
+  font-weight: bold;
+}
+
+.reservation-home-rooms
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 5% 0 5%;
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+.calendar-home
+{
+  background-color: black;
+  color: white;
+}
+
+.calendar-home-selector
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.calendar-home-selector button
+{
+  color: white;
+  margin: 2%;
+}
+.calendar-home-selector i
+{
+  font-size: 2.3vmax;
+}
+.calendar-home-selector p
+{
+  font-size: 2vmax;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.calendar
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  text-align: center;
+  padding: 0 7% 0 7%;
+}
+
+.vertical-separator
+{
+  width: 1px;
+  margin: 1% 0 1% 0;
+  border: solid #DFDFDF 1px;
+}
+
+.calendar-legend
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+.calendar-legend p
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vmax;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 4%;
+}
+.calendar-legend div
+{
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 1%;
+}
+.calendar-legend div:first-child
+{
+  background-color: #9C0000;
+}
+.calendar-legend div:nth-child(3)
+{
+  background-color: #00BA8D;
+}
+
+/* CSS du composant day */
+.day
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.day-title
+{
+  color: #B10000;
+  font-family: 'Amiko', sans-serif;
+  font-weight: bold;
+  font-size: 1.4vmax;
+  margin-bottom: 14%;
+}
+
+.timestamps
+{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6vmax;
+}
+
+.timestamps p
+{
+  margin: 4% 0 4% 0;
+}
+
+/* CSS du composant price */
+.price
+{
+  width: 17%;
+}
+
+.price p
+{
+  font-size: 1vmax;
+  text-transform: uppercase;
+}
+.price img
+{
+  width: 70%;
+  height: 70%;
+  object-position: 0 0;
+  object-fit: fill;
+}
+
+.price-img-container
+{
+  width: 100%;
+  height: 6vmax;
+}
+
+.price-smol-text
+{
+  font-size: 1vmax;
+}
+.price-red-text
+{
+  color: #930000;
 }
 
 /* CSS page sign_in.php */
@@ -395,10 +600,6 @@ nav{
     color: var(--text_bottom_button_color);
     padding: 5px;
     border-radius: 50%;
-}
-
-a {
-    color: inherit;
 }
 
 .page-footer .hide-on-large-only .icons-med {
@@ -818,6 +1019,57 @@ Should someone find a way to fix that if they can? Yes
     width: 115px;
     margin-left: 210px;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 994px) {
+    .modal {
+        left: 0;
+        max-height: 300px;
+        width: 324px;
+    }
+
+    .modal .modal-content {
+        padding: 12px;
+        padding-bottom: 0;
+    }
+
+    .modal .modal-content .modal-upper-text {
+        font-size: 1.5rem;
+    }
+
+    .modal .modal-content p {
+        font-size: 19px;
+    }
+
+    .modal .input-field {
+        margin-top: 0px;
+    }
+
+    .modal .input-field input {
+        width: 267px;
+    }
+
+    .modal .modal-password input {
+        width: 240px;
+    }
+
+    .modal .modal-password i {
+        left: 271px;
+    }
+
+    .modal .modal-password p {
+        margin-left: 168px;
+        font-size: 10px;
+    }
+
+    .modal #modal-foot .width-diff {
+        width: 180%;
+    }
+    #modal-foot .col {
+        height: 50px;
+    }
+}
+
 }
 .bouton_reserver_exp{
     margin-top: 5% !important;
