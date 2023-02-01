@@ -18,8 +18,57 @@
 </head>
 <body>
     <?php require_once("components/navbar.php") ?>
-    <div class="parallax-container parallax-1">
-        <div class="parallax"><img src="asset/account_font.svg"></div>
+    <?php 
+    $dsn = 'mysql:host=localhost;dbname=the_sense;port=3306;charset=utf8';
+    $pdo = new PDO($dsn, 'root' , 'root');
+    try {
+ 
+      $pdo = new PDO($dsn, 'root' , 'root');
+      
+      }
+    catch (PDOException $exception) {
+
+      mail('robin.frouin.04@gmail.com', 'PDOException', $exception->getMessage());
+      exit('Erreur de connexion à la base de données');
+      
+     }
+    $sql = "SELECT * FROM user";
+    $pre = $pdo->prepare($sql);
+    $pre->execute();
+    $data = $pre->fetchAll(PDO::FETCH_ASSOC);
+    foreach($data as $user){ ?>
+    <div class="parallax-container parallax-account">
+        <div class="parallax">MON COMPTE</div>
+    </div>
+    <div class="parallax-container" id="forms">
+      <form action="" method="post">
+        <div class="row" id="input">
+          <div class="col s4"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="Nom / Prénom" disabled="true"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="<?php echo $user['first_name']." ".$user['Last_name'] ?>" disabled ></div>
+          <div class="col s4"></div>
+          <?php } ?>
+        </div>
+        <div class="row">
+          <div class="col s4"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="E-mail" disabled="true"></input></div>
+          <div class="col s2"><input class="account_input" type="text" name="email" id="account-email" value="<?php echo $user['email']?>" disabled="true"></input></div>
+          <div class="col s1 btn" id="mail-btn" onclick="enable()">Modifier</div>
+          <div class="col s3"></div>
+        </div>
+        <div class="row">
+          <div class="col s4"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="Mot de passe :" disabled></div>
+          <div class="col s2"><input class="account_input" name="mdp" type="password" value="<?php echo $user['password']?>" disabled id="account-password-input" onchange="showButtonChange(this.value , this.defaultValue)"></input></div>
+          <div class="col s1 btn" id="mdp-btn" onclick="mdpDisableField()">Modifier</div>
+          <div class="col s3"></div>
+        </div>
+        <div class="row">
+          <div class="col s5"></div>
+          <div class="col s2 center hide" id="changeBtn"><input type="submit" name="changeBtn">S'inscrire</input></div>
+          <div class="col s5"></div>
+        </div>
+      </form> 
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

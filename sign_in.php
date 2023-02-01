@@ -24,8 +24,8 @@
   );
   ?>
   <?php require_once("components/navbar.php") ?>
-  <div class="parallax-container parallax-1">
-      <div class="parallax"><img src="asset/account_font.svg"></div>
+  <div class="parallax-container parallax-account">
+    <div class="parallax"><span class="par-text">INSCRIPTION</span></div>
   </div>
   <div class="parallax-container" id="forms">
     <div class="row" id="input">
@@ -72,12 +72,6 @@
       <div class="col s5"></div>
     </div>
   </div>
-  <?php
-  $name = $_POST['name'];
-  $firstname = $_POST['firstname'];
-  $eamil = $_POST['email'];
-  $password = $_POST['first_password']
-  ?>
   <?php require_once("components/footer.php") ?>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>

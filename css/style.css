@@ -289,13 +289,10 @@ nav{
 
 /* CSS page sign_in.php */
 
-.parallax-1{
-    z-index: -1;
-}
 #forms{
     background-image: url(../asset/Logo_blanc.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 80%;
     background-position: 50%;
 
 }
@@ -317,6 +314,28 @@ nav{
     border-color: #3B4040;
     background-color: #3B4040;
     color: white;
+}
+
+/* CSS account.php */
+.parallax-account{
+    background-image: url(../asset/account_font.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax{
+    z-index: 1 !important;
+    text-align: center;
+    font-size: 12vmax;
+    color: white;
+    margin-top: 133px;
+    font-family: 'Amiko', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+.account_input
+{
+    border-bottom:none!important;
 }
 /* CSS du footer */
 
@@ -799,7 +818,7 @@ Should someone find a way to fix that if they can? Yes
     width: 115px;
     margin-left: 210px;
     text-decoration: underline;
-=======
+}
 .bouton_reserver_exp{
     margin-top: 5% !important;
     margin: auto;
@@ -812,5 +831,4 @@ Should someone find a way to fix that if they can? Yes
     font-weight: 200;
     text-align: right;
     font-size: 15px;
->>>>>>> Stashed changes
 }
