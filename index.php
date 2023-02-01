@@ -8,6 +8,8 @@
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_article.css">
+  <link rel="stylesheet" href="css/style_smol_experience.css">
+
   <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link href="css/fontawesome/brands.min.css" rel="stylesheet">
@@ -94,8 +96,8 @@
     require 'components/article.php';
     ?>
   </div>
+  <?php require 'components/smol experience.php'; ?>
   <?php require 'components/faq.php'; ?>
-
   <?php require_once("components/footer.php") ?>
 
 
