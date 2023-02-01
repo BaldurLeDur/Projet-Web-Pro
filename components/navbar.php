@@ -14,7 +14,15 @@
           <?php if (!isset($_SESSION["user"])) { ?>
             <li class=" waves-effect waves-light"><a class="modal-trigger" href="#modal1"><span class="nav-component bold-nav">connexion</span></a></li>
           <?php } else { ?>
-            <li class=" waves-effect waves-light"><a class='dropdown-trigger btn' href='#' data-target='dropdown1'><span class="nav-component">Mon Compte</span></a></li>
+            <li class=" waves-effect waves-light"><a class='dropdown-trigger btn' href='#' data-target='dropdown1'><span class="nav-component">Mon Compte</span></a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider" tabindex="-1"></li>
+              <li><a href="#!">three</a></li>
+              <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+              <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+            </ul></li>
           <?php } ?>
       </ul>
   </div>
