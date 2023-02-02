@@ -17,6 +17,9 @@ $(document).ready(function(){
         $(this).toggleClass('myclass');
         $(this).toggleClass('showhidenew');
     });
+    $(document).on("keydown", "form", function(event) { 
+    return event.key != "Enter";
+});
 });
 
 function validate() {
@@ -72,6 +75,20 @@ function mdpEnableField(){
 
 }
 
+function mailDisableField(){
+
+    document.getElementById("account-email").removeAttribute("disabled");
+    document.getElementById("mail-btn").setAttribute("onclick","mailEnableField()");
+    
+    }
+    
+function mailEnableField(){
+    var newValueMail = document.getElementById("account-email").value;
+    document.getElementById("account-email").setAttribute("disabled", "");
+    document.getElementById("mail-btn").setAttribute("onclick","mailDisableField()");
+    document.getElementById("account-email").setAttribute("value", newValueMail);
+
+}
 function showButtonChange(actualValue,oldvalue){
     if (actualValue != oldvalue){
         document.getElementById("changeBtn").classList.add("show");
