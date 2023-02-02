@@ -35,7 +35,9 @@ body{
     background-color: var(--bg_color);
 }
 
-p{
+p {
+    font-family: "Abel", sans-serif;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -549,6 +551,10 @@ nav{
     height: 150px;
     background-color: var(--text_bottom_button_color);
     color: var(--text_bottom_color);
+}
+
+footer p {
+    font-size: 100%;
 }
 
 .page-footer .container {
@@ -1122,4 +1128,61 @@ Should someone find a way to fix that if they can? Yes
     text-align: center !important;
     font-size: 26px !important;
     padding: 69px !important;
+}
+
+h2 {
+    font-family: "Amiko", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Amiko", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.about-main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-what, .about-where-pre {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.who-group {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.who-person {
+    max-width: 20%;
+}
+
+.who-name {
+    font-size: 40px;
+    color: var(--text_color);
+}
+
+.who-name span {
+    color: var(--text_bottom_color);
+}
+
+.who-title {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 5%;
+}
+
+.who-subtitle {
+    font-size: 20px;
+    color: var(--text_color);
+}
+
+.about-hours {
+    text-align: center;
 }

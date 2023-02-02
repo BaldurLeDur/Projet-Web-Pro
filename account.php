@@ -19,6 +19,8 @@
 <body>
     
     <?php 
+    require_once "components/navbar.php";
+
     $dsn = 'mysql:host=localhost;dbname=the_sense;port=3306;charset=utf8';
     $pdo = new PDO($dsn, 'root' , 'root');
     try {
@@ -36,11 +38,11 @@
     if (isset($_POST['changeBtn'])){
       $mail = $_POST['email'];
       $password = $_POST['mdp'];
-      $update = "UPDATE user SET `password` = '".$password."' , `email` = '".$mail."'";
+      $update = "UPDATE users SET `password` = '".$password."' , `email` = '".$mail."'";
       $updatePre = $pdo->prepare($update);
       $updatePre->execute();
     }
-    $querryAccount = "SELECT * FROM user";
+    $querryAccount = "SELECT * FROM users";
     $querryAccountPre = $pdo->prepare($querryAccount);
     $querryAccountPre->execute();
     $dataAccount = $querryAccountPre->fetchAll(PDO::FETCH_ASSOC);
@@ -53,7 +55,7 @@
         <div class="row" id="input">
           <div class="col s4"></div>
           <div class="col s2"><input class="account_input" type="text"  value="Nom / Prénom" disabled="true"></div>
-          <div class="col s2"><input class="account_input" type="text"  value="<?php echo $userAccount['first_name']." ".$userAccount['Last_name'] ?>" disabled ></div>
+          <div class="col s2"><input class="account_input" type="text"  value="<?php echo $userAccount['first_name']." ".$userAccount['last_name'] ?>" disabled ></div>
           <div class="col s4"></div>
         </div>
         <div class="row">
@@ -79,6 +81,7 @@
         </div>
       </form>
     </div>
+    <?php require_once "components/footer.php"; ?>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
