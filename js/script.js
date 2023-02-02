@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('#confirm_password').click(function(){
         validate();
     });
-    $('#show_button_one').click(function() {
+    $('#show_button_one').click(function(){
         $(this).toggleClass('myclass');
         $(this).toggleClass('showhidenew');
     });
@@ -22,6 +22,9 @@ $(document).ready(function(){
         "constrainWidth": false,
         "coverTrigger": false
     });
+    $(document).on("keydown", "form", function(event) { 
+    return event.key != "Enter";
+});
 });
 
 function validate() {
@@ -57,5 +60,43 @@ function confirm_singin() {
     var confirm = document.getElementById("forms");
     if (email.classList.contains(validate) && mdpverified == true) {
         confirm.classList.add("confirmed");
+    }
+}
+
+function mdpDisableField(){
+
+    document.getElementById("account-password-input").removeAttribute("disabled");
+    document.getElementById("account-password-input").setAttribute("type","text");
+    document.getElementById("mdp-btn").setAttribute("onclick","mdpEnableField()");
+    
+    }
+    
+function mdpEnableField(){
+    var newValue = document.getElementById("account-password-input").value;
+    document.getElementById("account-password-input").setAttribute("disabled", "");
+    document.getElementById("account-password-input").setAttribute("type","password");
+    document.getElementById("mdp-btn").setAttribute("onclick","mdpDisableField()");
+    document.getElementById("account-password-input").setAttribute("value", newValue);
+
+}
+
+function mailDisableField(){
+
+    document.getElementById("account-email").removeAttribute("disabled");
+    document.getElementById("mail-btn").setAttribute("onclick","mailEnableField()");
+    
+    }
+    
+function mailEnableField(){
+    var newValueMail = document.getElementById("account-email").value;
+    document.getElementById("account-email").setAttribute("disabled", "");
+    document.getElementById("mail-btn").setAttribute("onclick","mailDisableField()");
+    document.getElementById("account-email").setAttribute("value", newValueMail);
+
+}
+function showButtonChange(actualValue,oldvalue){
+    if (actualValue != oldvalue){
+        document.getElementById("changeBtn").classList.add("show");
+        document.getElementById("changeBtn").classList.remove("hide")
     }
 }

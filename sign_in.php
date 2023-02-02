@@ -19,8 +19,9 @@
     require_once('components/config.php');
     require_once('components/navbar.php')
   ?>
-  <div class="parallax-container parallax-1">
-      <div class="parallax"><img src="asset/account_font.svg"></div>
+  <?php require_once("components/navbar.php") ?>
+  <div class="parallax-container parallax-account">
+    <div class="parallax"><span class="par-text">INSCRIPTION</span></div>
   </div>
   <form class="parallax-container" id="forms" action="actions/create_user.php" method="post">
     <div class="row" id="input">

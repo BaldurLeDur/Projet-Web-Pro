@@ -17,9 +17,67 @@
   <title>The Sensee - VR Room</title>
 </head>
 <body>
-    <?php require_once("components/navbar.php") ?>
-    <div class="parallax-container parallax-1">
-        <div class="parallax"><img src="asset/account_font.svg"></div>
+    
+    <?php 
+    $dsn = 'mysql:host=localhost;dbname=the_sense;port=3306;charset=utf8';
+    $pdo = new PDO($dsn, 'root' , 'root');
+    try {
+ 
+      $pdo = new PDO($dsn, 'root' , 'root');
+      
+      }
+    catch (PDOException $exception) {
+
+      mail('robin.frouin.04@gmail.com', 'PDOException', $exception->getMessage());
+      exit('Erreur de connexion à la base de données');
+      
+     }
+
+    if (isset($_POST['changeBtn'])){
+      $mail = $_POST['email'];
+      $password = $_POST['mdp'];
+      $update = "UPDATE user SET `password` = '".$password."' , `email` = '".$mail."'";
+      $updatePre = $pdo->prepare($update);
+      $updatePre->execute();
+    }
+    $querryAccount = "SELECT * FROM user";
+    $querryAccountPre = $pdo->prepare($querryAccount);
+    $querryAccountPre->execute();
+    $dataAccount = $querryAccountPre->fetchAll(PDO::FETCH_ASSOC);
+    foreach($dataAccount as $userAccount){ ?>
+    <div class="parallax-container parallax-account">
+        <div class="parallax">MON COMPTE</div>
+    </div>
+    <div class="parallax-container" id="forms">
+      <form action="" method="post" onkeydown="return event.key != 'Enter';">
+        <div class="row" id="input">
+          <div class="col s4"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="Nom / Prénom" disabled="true"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="<?php echo $userAccount['first_name']." ".$userAccount['Last_name'] ?>" disabled ></div>
+          <div class="col s4"></div>
+        </div>
+        <div class="row">
+          <div class="col s4"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="E-mail" disabled="true"></input></div>
+          <div class="col s2"><input class="account_input" disabled type="email" name="email" id="account-email" value="<?php echo $userAccount['email']?>" onchange="showButtonChange(this.value , this.defaultValue)"></input></div>
+          <div class="col s1 btn" id="mail-btn" onclick="mailDisableField()">Modifier</div>
+          <div class="col s3"></div>
+        </div>
+        <div class="row">
+          <div class="col s4"></div>
+          <div class="col s2"><input class="account_input" type="text"  value="Mot de passe :" disabled></div>
+          <div class="col s2"><input class="account_input" name="mdp" type="password" value="<?php echo $userAccount['password']?>" disabled id="account-password-input" onchange="showButtonChange(this.value , this.defaultValue)"></input></div>
+          <div class="col s1 btn" id="mdp-btn" onclick="mdpDisableField()">Modifier</div>
+          <div class="col s3"></div>
+        </div>
+        <?php } ?>
+        <div class="row">
+          <div class="col s5"></div>
+          <div class="col s2 center hide" id="changeBtn">
+            <input type="submit" name="changeBtn">S'inscrire</input></div>
+          <div class="col s5"></div>
+        </div>
+      </form>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

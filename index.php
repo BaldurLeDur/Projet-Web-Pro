@@ -7,7 +7,7 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_article.css">
+
   <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link href="css/fontawesome/brands.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
   <div class="btn center black" id="discover">dévouvrir</div>
   <div class="center"><?php require_once('components/article.php') ?></div>
-  
+
   <br/>
 
   <div><?php require_once('components/experience.php') ?></div>
@@ -35,9 +35,11 @@
 	require 'components/article.php';
 	?>
   </div>
+  <?php require 'components/smol_experience.php'; ?>
   <?php require 'components/faq.php'; ?>
-
   <?php require_once("components/footer.php") ?>
+
+  <?php require_once('components/reservation-home.php') ?>
 
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
