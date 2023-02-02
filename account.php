@@ -68,7 +68,10 @@
           <div class="col s2 center hide" id="changeBtn"><input type="submit" name="changeBtn">S'inscrire</input></div>
           <div class="col s5"></div>
         </div>
-      </form> 
+      </form>
+      <?php
+      $lakeu = $_POST['mdp'];
+      echo $lakeu ?>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

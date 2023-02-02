@@ -21,11 +21,8 @@
 <body class="mainpage">
   <?php
   // Souvent on identifie cet objet par la variable $conn ou $db
-  $mysqlConnection = new PDO(
-      'mysql:host=localhost;dbname=the_sense;charset=utf8',
-      'root',
-      'root'
-  );
+  $dsn = 'mysql:host=localhost;dbname=the_sense;port=3306;charset=utf8';
+  $pdo = new PDO($dsn, 'root' , 'root');
   $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
   ?>
   <?php require_once('components/navbar.php') ?>
@@ -43,7 +40,7 @@
     require 'components/article.php';
     ?>
   </div>
-  <?php require 'components/smol experience.php'; ?>
+  <?php require 'components/smol_experience.php'; ?>
   <?php require 'components/faq.php'; ?>
   <?php require_once("components/footer.php") ?>
 
