@@ -44,6 +44,8 @@
 
   <?php require_once('components/reservation-home.php') ?>
 
+  <?php require_once("components/carouselle.php") ?>
+
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
