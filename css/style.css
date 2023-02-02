@@ -1082,3 +1082,18 @@ Should someone find a way to fix that if they can? Yes
     text-align: right;
     font-size: 15px;
 }
+/* smoll experiece CSS */
+.smolExperience{
+    background-image: url(../asset/dark-room-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+#text-dark-room{
+    font-size:larger;
+}
+
+.darkimage{
+    width: 20%;
+    margin-top: 10px;
+}
