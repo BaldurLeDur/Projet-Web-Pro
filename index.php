@@ -7,8 +7,6 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_article.css">
-  <link rel="stylesheet" href="css/style_smol_experience.css">
 
   <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
