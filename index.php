@@ -18,12 +18,9 @@
 </head>
 <body class="mainpage">
   <?php
-  // Souvent on identifie cet objet par la variable $conn ou $db
-  $dsn = 'mysql:host=localhost;dbname=the_sense;port=3306;charset=utf8';
-  $pdo = new PDO($dsn, 'root' , 'root');
-  $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
+	require_once('components/config.php');
+	require_once('components/navbar.php')
   ?>
-  <?php require_once('components/navbar.php') ?>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
   <div class="btn center black" id="discover">dévouvrir</div>
   <div class="center"><?php require_once('components/article.php') ?></div>
@@ -33,10 +30,10 @@
   <div><?php require_once('components/experience.php') ?></div>
   <?php require_once('components/about.php') ?>
 
-  <div class ="article_container">
-    <?php
-    require 'components/article.php';
-    ?>
+  <div class="article_container">
+	<?php
+	require 'components/article.php';
+	?>
   </div>
   <?php require 'components/smol_experience.php'; ?>
   <?php require 'components/faq.php'; ?>
@@ -51,6 +48,18 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <?php
+  echo $_SESSION["error"];
+  if (isset($_SESSION['success'])) { ?>
+	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
+  <?php
+	unset($_SESSION['success']);
+  }
+  if (isset($_SESSION['error'])) { echo "dance in the rain"; ?>
+	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['error'] ?>"})</script>
+  <?php
+	unset($_SESSION['error']);
+  }?>
 </body>
 
 
