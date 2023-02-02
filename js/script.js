@@ -17,6 +17,10 @@ $(document).ready(function(){
         $(this).toggleClass('myclass');
         $(this).toggleClass('showhidenew');
     });
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+      });
 });
 
 function validate() {

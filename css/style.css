@@ -1082,3 +1082,40 @@ Should someone find a way to fix that if they can? Yes
     text-align: right;
     font-size: 15px;
 }
+
+.smol_experience{
+    background-image: url("../asset/image 2.svg");
+    background-size: cover;
+}
+
+
+p {
+    color: white;
+    font-size:larger;
+}
+
+.img{
+    width : 150px; 
+
+}
+
+
+.article{
+    text-align: center;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.article .texte{
+    background-color: #f2f2f2f2;
+    margin-left : 200px;
+    margin-right: 200px;
+    padding-top : 30px;
+}
+
+.article_container{
+    align-items:center;
+    text-align :center;
+}        
