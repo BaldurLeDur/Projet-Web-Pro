@@ -40,11 +40,12 @@
   </div>
   <?php require 'components/smol_experience.php'; ?>
   <?php require 'components/faq.php'; ?>
-  <?php require_once("components/footer.php") ?>
 
   <?php require_once('components/reservation-home.php') ?>
 
   <?php require_once("components/carouselle.php") ?>
+
+  <?php require_once("components/footer.php") ?>
 
 
   <script type="text/javascript" src="js/jquery.min.js"></script>

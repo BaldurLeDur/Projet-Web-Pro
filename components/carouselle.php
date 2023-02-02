@@ -10,7 +10,7 @@
     <?php foreach ($dataCarousel as $carousel){ ?>
       <div class="row">
         <div class="col s12 m7">
-          <div class="carousel-item" href="">
+          <div class="carousel-item" href="#<?php echo $carousel['ID']; ?>">
             <div class="card carousel_card">
               <div class="card-image">
                 <img src="./<?php echo $carousel['image_background'] ?>.jpg" alt="">
