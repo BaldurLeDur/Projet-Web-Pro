@@ -14,15 +14,7 @@
           <?php if (!isset($_SESSION["user"])) { ?>
             <li class=" waves-effect waves-light"><a class="modal-trigger" href="#modal1"><span class="nav-component bold-nav">connexion</span></a></li>
           <?php } else { ?>
-            <li class=" waves-effect waves-light"><a class='dropdown-trigger btn' href='#' data-target='dropdown1'><span class="nav-component">Mon Compte</span></a>
-            <ul id='dropdown1' class='dropdown-content'>
-              <li><a href="#!">one</a></li>
-              <li><a href="#!">two</a></li>
-              <li class="divider" tabindex="-1"></li>
-              <li><a href="#!">three</a></li>
-              <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-              <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-            </ul></li>
+            <li class=" waves-effect waves-light"><a class='dropdown-trigger' href='#' data-target='d'><span class="nav-component">Mon Compte</span></a></li>
           <?php } ?>
       </ul>
   </div>
@@ -34,9 +26,15 @@
   <?php if (!isset($_SESSION["user"])) { ?>
     <li class=" waves-effect waves-light"><a class="modal-trigger" href="#modal1"><span class="nav-component">connexion</span></a></li>
   <?php } else { ?>
-    <li class=" waves-effect waves-light"><a class='dropdown-trigger btn' href='#' data-target='dropdown1'><span class="nav-component">Mon Compte</span></a></li>
+    <li class=" waves-effect waves-light"><a href='#'><span class="nav-component"><?php echo $_SESSION["user"]["first_name"] ?></span></a></li>
+    <li><a href="actions/unconnect_user" class="red-text">Déconnexion</a></li>
   <?php } ?>
 </ul> 
+<ul id='d' class='dropdown-content'>
+  <li><a href="#!"><?php echo $_SESSION["user"]["first_name"] ?></a></li>
+  <li class="divider" tabindex="-1"></li>
+  <li><a href="actions/unconnect_user.php" class="red-text">Se déconnecter</a></li>
+</ul>
 <div id="modal1" class="modal">
   <form action="actions/connect_user.php" method="post">
     <div class="modal-content">

@@ -17,7 +17,11 @@ $(document).ready(function(){
         $(this).toggleClass('myclass');
         $(this).toggleClass('showhidenew');
     });
-    $('.dropdown-trigger').dropdown();
+    $('.dropdown-trigger').dropdown({
+        "alignment": "right",
+        "constrainWidth": false,
+        "coverTrigger": false
+    });
 });
 
 function validate() {

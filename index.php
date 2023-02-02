@@ -18,8 +18,8 @@
 </head>
 <body class="mainpage">
   <?php
-    require_once('components/config.php');
-    require_once('components/navbar.php')
+	require_once('components/config.php');
+	require_once('components/navbar.php')
   ?>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
   <div class="btn center black" id="discover">dévouvrir</div>
@@ -31,9 +31,9 @@
   <?php require_once('components/about.php') ?>
 
   <div class="article_container">
-    <?php
-    require 'components/article.php';
-    ?>
+	<?php
+	require 'components/article.php';
+	?>
   </div>
   <?php require 'components/faq.php'; ?>
 
@@ -46,14 +46,14 @@
   <?php
   echo $_SESSION["error"];
   if (isset($_SESSION['success'])) { ?>
-    <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
+	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
   <?php
-    unset($_SESSION['success']);
+	unset($_SESSION['success']);
   }
   if (isset($_SESSION['error'])) { echo "dance in the rain"; ?>
-    <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['error'] ?>"})</script>
+	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['error'] ?>"})</script>
   <?php
-    unset($_SESSION['error']);
+	unset($_SESSION['error']);
   }?>
 </body>
 
