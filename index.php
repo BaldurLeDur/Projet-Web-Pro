@@ -49,7 +49,6 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <?php
-  echo $_SESSION["error"];
   if (isset($_SESSION['success'])) { ?>
 	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
   <?php
