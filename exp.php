@@ -59,7 +59,7 @@
       $dataBinded = array(
         ":target" => $_GET['room']
       );
-      $pre = $pdo -> prepare($sql_query);
+      $pre = $mysqlConnection -> prepare($sql_query);
       $pre -> execute($dataBinded);
       $list_exp = $pre -> fetchAll(PDO::FETCH_ASSOC);
 
