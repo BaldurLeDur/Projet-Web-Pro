@@ -1,10 +1,6 @@
 <div class="day">
   <div class="day-title">
-    <p>
-      <span>Mardi </span>
-      <span>15 </span>
-      <span>Déc</span>.
-    </p>
+    <p><?php echo $date ?></p>
   </div>
   <div class="timestamps">
     <p>
@@ -16,8 +12,8 @@
       <p>17h50</p>
       <p>19h20</p>
       <p>20h50</p>
-      <p>22h50</p>
-      <p>23h50</p>
+      <p><?php if($fully_bookable === true){echo "22h20";} else{echo "-";} ?></p>
+      <p><?php if($fully_bookable === true){echo "23h50";} else{echo "-";} ?></p>
     </p>
   </div>
 </div>

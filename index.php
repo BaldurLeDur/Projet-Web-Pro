@@ -38,7 +38,6 @@
 	require 'components/article.php';
 	?>
   </div>
-  <?php require 'components/smol_experience.php'; ?>
   <?php require 'components/faq.php'; ?>
 
   <?php require_once('components/reservation-home.php') ?>

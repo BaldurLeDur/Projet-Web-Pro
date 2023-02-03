@@ -1,11 +1,27 @@
+<?php
+  $room_selected = rand(1, 3);
+  switch($room_selected)
+  {
+    case 1:
+      $room_selected = 'light';
+      break;
+    case 2:
+      $room_selected = 'dark';
+      break;
+    case 3:
+      $room_selected = 'battle';
+      break;
+  }
+?>
+
 <nav>
   <div class="nav-wrapper">
       <a href="#mobile-demo" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-component">menu</i></a>
-      <a href="#" class="brand-logo"><img class="nav-component" src="asset/Logo.png" id="lgonav" alt="logo"></a>
+      <a href="index.php" class="brand-logo"><img class="nav-component" src="asset/Logo.png" id="lgonav" alt="logo"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class=" waves-effect waves-light"><a href="news.html"><span class="nav-component">News</span></a></li>
           <li class="nav-component">|</li>
-          <li class=" waves-effect waves-light"><a href="exp.html"><span class="nav-component">Nos expérience</span></a></li>
+          <li class=" waves-effect waves-light"><a href="exp.php?room=<?php echo $room_selected ?>"><span class="nav-component">Nos expérience</span></a></li>
           <li class="nav-component">|</li>
           <li class=" waves-effect waves-light"><a href="ebout.html"><span class="nav-component">à propos</span></a></li>
           <li class="nav-component">|</li>
@@ -29,7 +45,7 @@
     <li class=" waves-effect waves-light"><a href='#'><span class="nav-component"><?php echo $_SESSION["user"]["first_name"] ?></span></a></li>
     <li><a href="actions/unconnect_user" class="red-text">Déconnexion</a></li>
   <?php } ?>
-</ul> 
+</ul>
 <ul id='d' class='dropdown-content'>
   <li><a href="#!"><?php echo $_SESSION["user"]["first_name"] ?></a></li>
   <li class="divider" tabindex="-1"></li>

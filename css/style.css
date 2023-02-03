@@ -435,6 +435,7 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 10%;
 }
 
 .day-title
@@ -1186,6 +1187,53 @@ h3 {
 .about-hours {
     text-align: center;
 }
+
+
+/* CSS de la page de 3 rooms */
+.light-bg
+{
+  background-color: white;
+  background-image: url('../asset/Vector_78.svg');
+}
+.dark-bg
+{
+  background-color: black;
+  background-image: url('../asset/VectorD.svg')
+}
+.battle-bg
+{
+  background-color: white;
+  background-image: url('../asset/shapes.svg')
+}
+
+.room-logos
+{
+  width: 70%;
+  margin: 0 15% 10vmax 15%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.room-logos img
+{
+  width: 44vmax;
+  height: auto;
+}
+.side-logos
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.side-logos img
+{
+  width: 17vmax;
+  height: auto;
+  margin: 20% 2% 7% 2%;
+}
+
 
 .carouselle{
     height: 500px !important;

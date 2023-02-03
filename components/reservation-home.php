@@ -31,24 +31,22 @@
 <div class="calendar-home">
   <div class="calendar-home-selector">
     <button type="button" name="prev-date"><i class="material-icons">keyboard_double_arrow_left</i></button>
-    <p>Du <span class="calendar-start-day">10</span> au <span class="calendar-end-day">20</span> <span class="clanedar-month">Décembre</span></p>
+    <p>Du 31 Janvier au 5 Février</p>
     <button type="button" name="next-date"><i class="material-icons">keyboard_double_arrow_right</i></button>
   </div>
 </div>
 <div class="calendar">
-  <?php require('components/day.php') ?>
+  <?php $date = 'Mardi 31 Jan.'; $fully_bookable = false; require('components/day.php') ?>
   <div class="vertical-separator"></div>
-  <?php require('components/day.php') ?>
+  <?php $date = 'Mercredi 01 Fév.'; $fully_bookable = false; require('components/day.php') ?>
   <div class="vertical-separator"></div>
-  <?php require('components/day.php') ?>
+  <?php $date = 'Jeudi 02 Fév.'; $fully_bookable = false; require('components/day.php') ?>
   <div class="vertical-separator"></div>
-  <?php require('components/day.php') ?>
+  <?php $date = 'Vendredi 03 Fév.'; $fully_bookable = true; require('components/day.php') ?>
   <div class="vertical-separator"></div>
-  <?php require('components/day.php') ?>
+  <?php $date = 'Samedi 04 Fév.'; $fully_bookable = true; require('components/day.php') ?>
   <div class="vertical-separator"></div>
-  <?php require('components/day.php') ?>
-  <div class="vertical-separator"></div>
-  <?php require('components/day.php') ?>
+  <?php $date = 'Dimanche 05 Fév.'; $fully_bookable = false; require('components/day.php') ?>
 </div>
 <div class="calendar-legend">
   <div></div>
