@@ -2,14 +2,14 @@
 require_once("../components/config.php");
 
 if (empty($_POST["email"])) {
-	$_SESSION["error"] = "Veuillez rentrer un email valide !";
+	$_SESSION["message"] = "Veuillez rentrer un email valide !";
 } else if (empty($_POST["password"])) {
-	$_SESSION["error"] = "Veuillez rentrer un mot de passe !";
+	$_SESSION["message"] = "Veuillez rentrer un mot de passe !";
 }
 
 if (isset($_SESSION['error'])) {
-	echo "Returned error \"".$_SESSION["error"]."\"";
-	//header("Location:../index.php#modal1");
+	echo "Returned error \"".$_SESSION["message"]."\"";
+	header("Location:../index.php#modal1");
 	die();
 }
 

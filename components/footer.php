@@ -3,9 +3,10 @@
         <div class="row">
             <div class="col s12 m4 l5 footer-left">
                 <p>
-                    <a href="#">Nous contacter</a>
-                    <a href="#">Réservation</a>
-                    <a href="#">FAQ</a>
+                    <!-- Note: la vraie façon de faire est "/about.php" mais vu que Uwamp est à la racine de localhost, ça marche pas sur ce coup -->
+                    <a href="about.php#contact">Nous contacter</a>
+                    <a href="index.php#reservation">Réservation</a>
+                    <a href="index.php#faq">FAQ</a>
                 </p>
             </div>
             <div class="col s12 m4 l3">

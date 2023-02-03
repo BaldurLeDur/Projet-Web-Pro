@@ -7,7 +7,6 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
-
   <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link href="css/fontawesome/brands.min.css" rel="stylesheet">
@@ -21,7 +20,7 @@
 	require_once('components/config.php');
 	require_once('components/navbar.php')
   ?>
-  <div class="center"><img class="logo-main" src="asset/Logo.png" alt=""><br>
+  <div class="center"><img class="logo-main" src="asset/Logo.png" alt="The Sense Logo"><br>
   <div class="btn center black" id="discover">dévouvrir</div>
 
   <br/>
@@ -48,15 +47,10 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <?php
-  if (isset($_SESSION['success'])) { ?>
-	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['success'] ?>"})</script>
+  if (isset($_SESSION['message'])) { ?>
+  <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['message'] ?>"})</script>
   <?php
-	unset($_SESSION['success']);
-  }
-  if (isset($_SESSION['error'])) { echo "dance in the rain"; ?>
-	<script type="text/javascript">M.toast({html: "<?php echo $_SESSION['error'] ?>"})</script>
-  <?php
-	unset($_SESSION['error']);
+  unset($_SESSION['message']);
   }?>
 </body>
 

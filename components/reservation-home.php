@@ -1,4 +1,4 @@
-<div class="reservation-home">
+<div class="reservation-home" id="reservation">
   <div class="reservation-home-title">
     <img src="asset/reservation.svg" alt="Reservation">
     <p>N'attendez plus, réservez</p>

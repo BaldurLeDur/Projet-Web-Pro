@@ -47,7 +47,7 @@
   <?php } ?>
 </ul>
 <ul id='d' class='dropdown-content'>
-  <li><a href="#!"><?php echo $_SESSION["user"]["first_name"] ?></a></li>
+  <li><a href="account.php"><?php echo $_SESSION["user"]["first_name"] ?></a></li>
   <li class="divider" tabindex="-1"></li>
   <li><a href="actions/unconnect_user.php" class="red-text">Se déconnecter</a></li>
 </ul>

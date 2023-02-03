@@ -33,6 +33,7 @@ body{
     color: var(--text_color);
     font-family: 'Abel', sans-serif;
     background-color: var(--bg_color);
+    scroll-behavior: smooth;
 }
 
 p {
@@ -237,6 +238,7 @@ nav{
   flex-direction: row;
   width: 20%;
   height: 100%;
+  cursor: pointer;
 }
 .about-video div
 {
@@ -253,6 +255,10 @@ nav{
   object-fit: cover;
   border-radius: 50%;
   border: solid 1.2vmax  rgba(0 0 0 / 20%);
+}
+
+.video {
+    display: none;
 }
 
 .about-title
@@ -1135,17 +1141,20 @@ h2 {
     font-family: "Amiko", sans-serif;
     font-weight: bold;
     font-size: 40px;
+    text-transform: uppercase;
 }
 
 h3 {
     font-family: "Amiko", sans-serif;
     font-weight: bold;
     font-size: 35px;
+    text-transform: uppercase;
 }
 
 .about-main {
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 20rem;
 }
 
 .about-what, .about-where-pre {
@@ -1186,6 +1195,45 @@ h3 {
 
 .about-hours {
     text-align: center;
+}
+
+.about-contact form input[type="text"], .about-contact form input[type="email"] {
+    border: 1px solid #3B4040;
+    border-radius: 10px;
+}
+
+#beeg-text {
+    height: 12rem;
+}
+
+.about-contact form input[type="submit"] {
+    border: none;
+    background-color: #1BDCC5;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: "Amiko", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.about-contact span {
+    color: #0DE4BD;
+}
+
+@media screen and (max-width: 994px) {
+    .who-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .who-person {
+        max-width: 70%;
+    }
 }
 
 
