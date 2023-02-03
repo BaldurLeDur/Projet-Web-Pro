@@ -4,7 +4,7 @@
   $dataCarousel = $preCarousel->fetchAll(PDO::FETCH_ASSOC);
    ?>
 
-  <div class="carousel carousel-slider center">
+  <div class="carousel carousel-slider center carouselle">
     <div class="carousel-fixed-item center">
     </div>
     <?php foreach ($dataCarousel as $carousel){ ?>

@@ -27,7 +27,10 @@
 
   <br/>
 
-  <div><?php require_once('components/experience.php') ?></div>
+  <?php require_once('components/experience.php') ?>
+
+  <?php require_once('components/news.php') ?>
+
   <?php require_once('components/about.php') ?>
 
   <div class="article_container">
@@ -41,6 +44,7 @@
   <?php require_once('components/reservation-home.php') ?>
 
   <?php require_once("components/carouselle.php") ?>
+  <?php require_once("components/carouselle2.php") ?>
 
   <?php require_once("components/footer.php") ?>
 

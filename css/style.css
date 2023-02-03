@@ -1186,3 +1186,60 @@ h3 {
 .about-hours {
     text-align: center;
 }
+
+.carouselle{
+    height: 500px !important;
+}
+
+.carouselle2{
+    height: 400px !important;
+    background-color: #EAFFFB;
+}
+
+.carousel2_title{
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.carousel2_content{
+    width: 100%;
+    font-family: 'Abel', sans-serif !important;
+    font-size: 35px;
+}
+
+
+.row_img_news{
+    margin-bottom: 0px;
+}
+
+.images_news{
+    position: relative;
+    width: 100%;
+    line-height: 0px;
+}
+
+.image_news{
+    width: 100%;
+}
+
+.text_news{
+    background-color: #E6E6E6;
+    padding: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title_news{
+    font-size: 30px;
+    color: #3B4040;
+    font-family: 'Amiko', sans-serif;
+    font-weight: 750;
+    margin: 0;
+}
+
+
+.content_news{
+    color: #646363;
+    font-family:'Abel', sans-serif;
+    font-size: 21px;
+}
