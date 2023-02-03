@@ -21,7 +21,7 @@
 		unset($_SESSION["user"]);
 	}
 
-	$_SESSION["success"] = "Goodbye ".$name.".";
+	$_SESSION["message"] = "Goodbye ".$name.".";
 
 	header("Location:../index.php");
 ?>

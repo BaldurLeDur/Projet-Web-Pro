@@ -108,3 +108,9 @@ function showButtonChange(actualValue,oldvalue){
         document.getElementById("changeBtn").classList.remove("hide")
     }
 }
+
+function showVideo(){
+    $(".video").css("display", "initial");
+    $('#trailer').get(0).play()
+    window.location.href = "index.php#trailer";
+}

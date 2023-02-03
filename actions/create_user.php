@@ -4,19 +4,19 @@ require_once("../components/config.php");
 if (empty($_POST['firstname']) || empty($_POST["name"])) {
 	$_SESSION['error'] = "Veuillez rentrer votre nom et prénom !";
 } else if (empty($_POST["email"])) {
-	$_SESSION["error"] = "Veuillez rentrer un email valide !";
+	$_SESSION["message"] = "Veuillez rentrer un email valide !";
 } else if (empty($_POST["tel"])) {
-	$_SESSION["error"] = "Veuillez rentrer un numéro de téléphone valide !";
+	$_SESSION["message"] = "Veuillez rentrer un numéro de téléphone valide !";
 } else if (empty($_POST["first_password"])) {
-	$_SESSION["error"] = "Veuillez rentrer un mot de passe !";
+	$_SESSION["message"] = "Veuillez rentrer un mot de passe !";
 } else if (empty($_POST["confirm_password"])) {
-	$_SESSION["error"] = "Veuillez confirmer le mot de passe !";
+	$_SESSION["message"] = "Veuillez confirmer le mot de passe !";
 } else if ($_POST["first_password"]!=$_POST["confirm_password"]) {
-	$_SESSION["error"] = "Les mots de passe ne correspondent pas.";
+	$_SESSION["message"] = "Les mots de passe ne correspondent pas.";
 }
 
 if (isset($_SESSION['error'])) {
-	echo "Returned error \"".$_SESSION["error"]."\"";
+	echo "Returned error \"".$_SESSION["message"]."\"";
 	header("Location:../sign_in.php");
 	die();
 }
@@ -36,7 +36,7 @@ $pre->execute($dataBinded);
 
 echo empty($pre);
 
-$_SESSION["success"] = "Compte créé avec succès!\nVous pouvez maintenant vous connecter!";
+$_SESSION["message"] = "Compte créé avec succès!\nVous pouvez maintenant vous connecter!";
 header("Location:../index.php");
 
 exit();

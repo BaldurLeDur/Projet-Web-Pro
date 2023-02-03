@@ -1,7 +1,7 @@
 <div class="about">
-  <div class="about-video">
+  <div class="about-video" onclick="showVideo()">
     <div>
-      <img src="asset/account_font.svg" alt=""/>
+      <img src="asset/account_font.svg" alt="The trailer of The Sense"/>
     </div>
   </div>
   <div class="about-content">
@@ -22,4 +22,9 @@
       <i class="material-icons">arrow_right_alt</i>
     </div></a>
   </div>
+</div>
+<div class="video">
+  <video class="responsive-video" id="trailer" controls autoplay>
+    <source src="asset/trailer.mp4" type="video/mp4">
+  </video>
 </div>

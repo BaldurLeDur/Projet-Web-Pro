@@ -7,6 +7,7 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
   <link rel="stylesheet" href="css/style.css">
+  <!--Import Font Awesome-->
   <link href="css/fontawesome/fontawesome.min.css" rel="stylesheet">
   <link href="css/fontawesome/brands.min.css" rel="stylesheet">
   <link href="css/fontawesome/solid.min.css" rel="stylesheet">
@@ -19,7 +20,6 @@
     require_once('components/config.php');
     require_once('components/navbar.php')
   ?>
-  <?php require_once("components/navbar.php") ?>
   <div class="parallax-container parallax-account">
     <div class="parallax"><span class="par-text">INSCRIPTION</span></div>
   </div>
@@ -75,10 +75,10 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <?php
-  if (isset($_SESSION['error'])) { ?>
-    <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['error'] ?>"})</script>
+  if (isset($_SESSION['message'])) { ?>
+  <script type="text/javascript">M.toast({html: "<?php echo $_SESSION['message'] ?>"})</script>
   <?php
-    unset($_SESSION['error']);
-  } ?>
+  unset($_SESSION['message']);
+  }?>
 </body>
 </html>
