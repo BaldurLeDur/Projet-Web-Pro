@@ -22,7 +22,6 @@
   ?>
   <div class="center"><img class="logo-main" src="asset/Logo.png" alt="The Sense Logo"><br>
   <div class="btn center black" id="discover">dévouvrir</div>
-  <div class="center"><?php require_once('components/article.php') ?></div>
 
   <br/>
 
@@ -33,9 +32,6 @@
   <?php require_once('components/about.php') ?>
 
   <div class="article_container">
-	<?php
-	require 'components/article.php';
-	?>
   </div>
   <?php require 'components/faq.php'; ?>
 
