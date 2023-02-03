@@ -1,5 +1,5 @@
 <?php $querryCarousel= "SELECT * FROM carouselle";
-  $preCarousel = $mysqlConnection->prepare($querryCarousel);
+  $preCarousel = $pdo->prepare($querryCarousel);
   $preCarousel->execute();
   $dataCarousel = $preCarousel->fetchAll(PDO::FETCH_ASSOC);
    ?>

@@ -1,7 +1,7 @@
 <div class="about">
   <div class="about-video">
     <div>
-      <img src="asset/PLACEHOLDER.png" alt=""/>
+      <img src="asset/account_font.svg" alt=""/>
     </div>
   </div>
   <div class="about-content">
@@ -17,7 +17,7 @@
       <br/>
       Ce n’est pas une expérience en réalité virtuelle que vous vivez, c’est la réalité.
     </p>
-    <a href="https://google.com"><div class="about-button">
+    <a href="about.php"><div class="about-button">
       <p>Découvrez The Sense</p>
       <i class="material-icons">arrow_right_alt</i>
     </div></a>
