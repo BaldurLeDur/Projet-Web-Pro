@@ -24,7 +24,7 @@
   </div>
 </div>
 <div class="video">
-  <video class="responsive-video" id="trailer" controls autoplay>
+  <video class="responsive-video" id="trailer" controls>
     <source src="asset/trailer.mp4" type="video/mp4">
   </video>
 </div>
